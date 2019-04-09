@@ -5,10 +5,51 @@
  */
 package Mazo;
 
+import Carta.Carta;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Random;
+
 /**
  *
  * @author alexandra
  */
-public class Mazo {
+public abstract class Mazo {
+    LinkedList<Carta> listaCartas;
+    Carta carta;
     
+    // ROBAR, BARAJAR 
+    
+    public void robarCarta() {
+        listaCartas.addLast(carta);
+        listaCartas.remove(carta);
+
+    }
+    
+    private static void barajarCartas(Mazo mazo){
+	Collections.shuffle((List<?>) mazo);
+    }
+        
+    public LinkedList<Carta> getListaCartasMazo() {
+        return listaCartas;
+    }
+
+    public void setListaMazo(LinkedList<Carta> listaCartas) {
+        this.listaCartas = listaCartas;
+    }
+    
+    public void añadirCarta(Carta carta){
+        getListaCartasMazo().add(carta);
+    }
+
+    public void eliminarCarta(Carta carta){
+        getListaCartasMazo().remove(0);
+    }
+    
+    public LinkedList<Carta> verCartas(Mazo mazo){
+        LinkedList<Carta> cartas=mazo.getListaCartasMazo();
+        return cartas;
+    }
 }

@@ -7,7 +7,7 @@ package Carta;
 
 /**
  *
- * @author alexandra
+ * @author
  */
 public class Carta {
     
