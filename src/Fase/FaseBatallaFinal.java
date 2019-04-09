@@ -9,6 +9,6 @@ package Fase;
  *
  * @author alexandra
  */
-public class FaseBatallaFinal {
+public class FaseBatallaFinal extends Fase {
     
 }
