@@ -5,10 +5,12 @@
  */
 package Carta.CartasLucha;
 
+import Carta.Carta;
+
 /**
  *
  * @author alexandra
  */
-public class CartaEnvejecimiento {
+public class CartaEnvejecimiento extends Carta {
     
 }
