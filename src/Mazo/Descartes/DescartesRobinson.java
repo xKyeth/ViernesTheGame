@@ -7,7 +7,7 @@ package Mazo.Descartes;
 
 /**
  *
- * @author alexandra
+ * @author Insertar el nombre de la persona que edite esta clase
  */
 public class DescartesRobinson {
     
