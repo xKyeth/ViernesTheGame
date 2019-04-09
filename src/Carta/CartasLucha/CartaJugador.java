@@ -17,6 +17,26 @@ public abstract class CartaJugador extends Carta {
     }
     
     public abstract void habilidad();
+
+    
+    public String getNombreCarta() {
+        return nombreCarta;
+    }
+
+    
+    public void setNombreCarta(String nombreCarta) {
+        this.nombreCarta = nombreCarta;
+    }
+
+    
+    public int getPoder() {
+        return poder;
+    }
+
+    
+    public void setPoder(int poder) {
+        this.poder = poder;
+    }
     
     
 }
