@@ -5,10 +5,14 @@
  */
 package Mazo;
 
+import Carta.CartasPirata.CartaPirata;
+import java.util.LinkedList;
+
 /**
  *
  * @author alexandra
  */
 public class MazoPirata extends Mazo{
-    
+    LinkedList<CartaPirata> listaCartasPirata;
+
 }

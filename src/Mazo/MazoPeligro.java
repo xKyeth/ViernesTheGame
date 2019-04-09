@@ -5,10 +5,14 @@
  */
 package Mazo;
 
+import Carta.CartasLucha.CartaPeligro;
+import java.util.LinkedList;
+
 /**
  *
  * @author alexandra
  */
 public class MazoPeligro extends Mazo {
-    
+    LinkedList<CartaPeligro> listaCartasPeligro;
+
 }
