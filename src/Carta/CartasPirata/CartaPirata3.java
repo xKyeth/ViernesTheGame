@@ -9,6 +9,6 @@ package Carta.CartasPirata;
  *
  * @author imanol
  */
-public class CartaPirata3 {
+public class CartaPirata3 extends CartaPirata {
     
 }
