@@ -9,6 +9,6 @@ package Mazo;
  *
  * @author alexandra
  */
-public class MazoPeligro {
+public class MazoPeligro extends Mazo {
     
 }
