@@ -14,11 +14,9 @@ public class Comer extends CartaJugador {
         poder = 0;
     }
     
-   
-
     @Override
     public void habilidad() {
-        
+        //No tiene ninguna habilidad
     }
     
 }

@@ -1,14 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Carta.CartasRobinson;
 
-/**
- *
- * @author usuario
- */
-public class Concentrado {
+package Carta.CartasRobinson;
+import Carta.CartasLucha.CartaJugador;
+ 
+// autor Fernando
+
+public class Concentrado extends CartaJugador {
+
+    public Concentrado(String nombreCarta, int poder) {
+        super(nombreCarta, poder);
+        nombreCarta = "Concentrado";
+        poder = 1;
+    }
+    
+    
+    @Override
+    public void habilidad() {
+        //aumenta dos de vida
+    }
     
 }
