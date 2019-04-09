@@ -9,7 +9,7 @@ import Carta.Carta;
 
 /**
  *
- * @author alexandra
+ * @author Insertar el nombre de la persona que edite esta clase
  */
 public class CartaPirata extends Carta {
     
