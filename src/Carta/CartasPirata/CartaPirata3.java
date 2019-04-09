@@ -7,8 +7,8 @@ package Carta.CartasPirata;
 
 /**
  *
- * @author alexandra
+ * @author imanol
  */
-public class CartaPirata {
+public class CartaPirata3 {
     
 }
