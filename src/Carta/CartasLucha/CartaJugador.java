@@ -1,16 +1,24 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Carta.CartasLucha;
 
 import Carta.Carta;
 
-/**
- *
- * @author pecorte
- */
-public class CartaJugador extends Carta {
+//autor Fernando
+
+public abstract class CartaJugador extends Carta {
+    
+    private String nombreCarta;
+    private int poder;
+    
+    public CartaJugador(String nombreCarta, int poder) {
+        this.nombreCarta = nombreCarta;
+        this.poder = poder;
+        
+    }
+    
+    public abstract void habilidad();
+    
     
 }
+
+
