@@ -17,6 +17,7 @@ public class Concentrado extends CartaJugador {
     
     @Override
     public void habilidad() {
+        //Aumenta mas 2 de vida a Robinson
         robinson.setVida(robinson.getVida()+2);
     }
     
