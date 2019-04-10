@@ -11,4 +11,14 @@ package Carta.CartasPirata;
  */
 public class CartaPirata4 extends CartaPirata {
     
+    public CartaPirata4(){
+        setPoder(16);
+        setNumCartas(7);
+    }
+    
+        public void skillCarta(){
+            //cada carta robada cuesta 2 de vida en vez de 1
+        }
+        
+        
 }

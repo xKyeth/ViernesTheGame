@@ -10,5 +10,16 @@ package Carta.CartasPirata;
  * @author imanol
  */
 public class CartaPirata10 extends CartaPirata {
+ 
+    
+    public CartaPirata10(){
+        setPoder(52);
+        setNumCartas(10);
+    }
+    
+    
+    public void skillCarta(){
+            //Cada carta vale 1 punto mas
+        }
     
 }

@@ -11,4 +11,9 @@ package Carta.CartasPirata;
  */
 public class CartaPirata6 extends CartaPirata {
     
+    public CartaPirata6(){
+        setPoder(30);
+        setNumCartas(8);
+    }
+    
 }

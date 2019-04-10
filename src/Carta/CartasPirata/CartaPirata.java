@@ -11,6 +11,8 @@ import Carta.Carta;
  *
  * @author imanol
  */
+ 
+
 public abstract class CartaPirata extends Carta {
     
     private int poder;
@@ -43,5 +45,5 @@ public abstract class CartaPirata extends Carta {
     public void setNumCartas(int numCartas) {
         this.numCartas = numCartas;
     }
-    
 }
+

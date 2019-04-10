@@ -5,10 +5,13 @@
  */
 package Mazo;
 
+import Carta.CartasLucha.CartaEnvejecimiento;
+import java.util.LinkedList;
+
 /**
  *
  * @author alexandra
  */
-public class MazoEnvejecimiento {
-    
+public class MazoEnvejecimiento extends Mazo {
+    LinkedList<CartaEnvejecimiento> listaCartasEnvejecimiento;
 }

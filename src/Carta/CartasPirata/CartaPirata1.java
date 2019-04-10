@@ -12,17 +12,18 @@ import Mazo.*;
  */
 public class CartaPirata1 extends CartaPirata {
     
+    MazoEnvejecimiento me;
+    int pod;
     public CartaPirata1(){
-        setPoder(10);
+        setPoder(this.pod);
         setNumCartas(5);
     }
     
     
-    public int calcPoder(){
-        int pod;
-        //pod=(mazoEnvejecimiento.size()-10)*2
+    public void calcPoder(){
         
-        return pod;
+        this.pod=(me.getListaCartasMazo().size()-10)*2;        
+        
     }
     
     
