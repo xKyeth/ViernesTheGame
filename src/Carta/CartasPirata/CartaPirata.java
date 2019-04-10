@@ -9,8 +9,41 @@ import Carta.Carta;
 
 /**
  *
- * @author Insertar el nombre de la persona que edite esta clase
+ * @author imanol
  */
-public class CartaPirata extends Carta {
+ 
+
+public abstract class CartaPirata extends Carta {
     
+    private int poder;
+    private int numCartas;
+
+    /**
+     * @return the poder
+     */
+    public int getPoder() {
+        return poder;
+    }
+
+    /**
+     * @param poder the poder to set
+     */
+    public void setPoder(int poder) {
+        this.poder = poder;
+    }
+
+    /**
+     * @return the numCartas
+     */
+    public int getNumCartas() {
+        return numCartas;
+    }
+
+    /**
+     * @param numCartas the numCartas to set
+     */
+    public void setNumCartas(int numCartas) {
+        this.numCartas = numCartas;
+    }
 }
+

@@ -14,5 +14,4 @@ import java.util.LinkedList;
  */
 public class MazoRobinson extends Mazo{
     LinkedList<CartaRobinson> listaCartasRobinson;
-
 }

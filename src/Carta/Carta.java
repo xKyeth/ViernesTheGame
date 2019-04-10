@@ -11,4 +11,9 @@ package Carta;
  */
 public class Carta {
     
+    public Carta(){
+        
+    }
+    
+    
 }

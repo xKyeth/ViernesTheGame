@@ -20,7 +20,6 @@ public class Main {
        Scanner sn = new Scanner(System.in);
         boolean salir = false;
         int opcion; //Guardaremos la opcion del usuario
- 
         while (!salir) {
  
             System.out.println("1. Comenzar Partida");

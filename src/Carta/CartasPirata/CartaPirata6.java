@@ -3,15 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Mazo;
-
-import Carta.CartasLucha.CartaPeligro;
-import java.util.LinkedList;
+package Carta.CartasPirata;
 
 /**
  *
- * @author alexandra
+ * @author imanol
  */
-public class MazoPeligro extends Mazo {
-    LinkedList<CartaPeligro> listaCartasPeligro;
+public class CartaPirata6 extends CartaPirata {
+    
+    public CartaPirata6(){
+        setPoder(30);
+        setNumCartas(8);
+    }
+    
 }

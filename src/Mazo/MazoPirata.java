@@ -13,6 +13,7 @@ import java.util.LinkedList;
  * @author alexandra
  */
 public class MazoPirata extends Mazo{
-    LinkedList<CartaPirata> listaCartasPirata;
-
+    
+    LinkedList<CartaPirata> listaCartasPirata;    
+    
 }
