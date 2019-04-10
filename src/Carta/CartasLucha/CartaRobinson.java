@@ -10,6 +10,7 @@ public abstract class CartaRobinson extends Carta {
     
     private String fase;
     private int vida;
+   
     
     public CartaRobinson() {
         setFase("Verde");

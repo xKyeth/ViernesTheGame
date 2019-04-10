@@ -9,14 +9,15 @@ public abstract class CartaJugador extends Carta {
     
     private String nombreCarta;
     private int poder;
+    private String habilidad;
     
-    public CartaJugador(String nombreCarta, int poder) {
+    public CartaJugador(String nombreCarta, int poder, String habilidad) {
         this.nombreCarta = nombreCarta;
         this.poder = poder;
+        this.habilidad = habilidad;
         
     }
     
-    public abstract void habilidad();
 
     
     public String getNombreCarta() {
@@ -36,6 +37,16 @@ public abstract class CartaJugador extends Carta {
     
     public void setPoder(int poder) {
         this.poder = poder;
+    }
+
+    
+    public String getHabilidad() {
+        return habilidad;
+    }
+
+    
+    public void setHabilidad(String habilidad) {
+        this.habilidad = habilidad;
     }
     
     

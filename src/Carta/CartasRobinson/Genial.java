@@ -6,16 +6,14 @@ import Carta.CartasLucha.CartaJugador;
 
 public class Genial extends CartaJugador {
 
-    public Genial(String nombreCarta, int poder) {
-        super(nombreCarta, poder);
+    public Genial(String nombreCarta, int poder, String habilidad) {
+        super(nombreCarta, poder, habilidad);
         nombreCarta = "Genial";
         poder = 2;
+        habilidad ="...";
     }
 
-    @Override
-    public void habilidad() {
-        //No tiene ninguna habilidad
-    }
+    
     
     
 }

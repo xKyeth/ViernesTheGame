@@ -6,16 +6,14 @@ import Carta.CartasLucha.CartaJugador;
  
 public class Normal extends CartaJugador {
 
-    public Normal(String nombreCarta, int poder) {
-        super(nombreCarta, poder);
+    public Normal(String nombreCarta, int poder, String habilidad) {
+        super(nombreCarta, poder, habilidad);
         nombreCarta = "Normal";
         poder = 0;
+        habilidad = "...";
     }
 
-    @Override
-    public void habilidad() {
-        //No tiene ninguna habilidad
-    }
+    
     
     
 }
