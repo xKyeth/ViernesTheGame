@@ -9,11 +9,9 @@ public class Concentrado extends CartaJugador {
 
     CartaRobinson robinson;
     
-    public Concentrado(String nombreCarta, int poder, String habilidad) {
-        super(nombreCarta, poder, habilidad);
-        nombreCarta = "Concentrado";
-        poder = 1;
-        habilidad = "+2 Vida";
+    public Concentrado() {
+        super("Concentrado", 1, "+2 Vida");
+        
     }
     
 }

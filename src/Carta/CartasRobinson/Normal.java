@@ -6,11 +6,9 @@ import Carta.CartasLucha.CartaJugador;
  
 public class Normal extends CartaJugador {
 
-    public Normal(String nombreCarta, int poder, String habilidad) {
-        super(nombreCarta, poder, habilidad);
-        nombreCarta = "Normal";
-        poder = 0;
-        habilidad = "...";
+    public Normal() {
+        super("Normal", 0, "...");
+        
     }
 
     

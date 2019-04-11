@@ -6,11 +6,9 @@ import Carta.CartasLucha.CartaJugador;
 
 public class Desconcentrado extends CartaJugador {
 
-    public Desconcentrado(String nombreCarta, int poder, String habilidad) {
-        super(nombreCarta, poder, habilidad);
-        nombreCarta = "Desconcentrado";
-        poder = -1;
-        habilidad = "...";
+    public Desconcentrado() {
+        super("Desconcentrado", -1, "...");
+        
     }
 
     
