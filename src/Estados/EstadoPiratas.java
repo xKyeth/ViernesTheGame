@@ -4,16 +4,16 @@
  * and open the template in the editor.
  */
 package Estados;
-
+import Carta.CartasLucha.CartaRobinson;
 /**
  *
  * @author usuario
  */
 public class EstadoPiratas extends Cambio{
-
+    CartaRobinson robinson ;
     @Override
     public void cambioFase() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            robinson.setCambio(new EstadoPiratas());
     }
     
 }
