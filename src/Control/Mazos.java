@@ -3,6 +3,7 @@ package Control;
 import Carta.CartasLucha.CartasPeligro.*;
 import Carta.CartasPirata.*;
 import Carta.CartasRobinson.*;
+import Carta.Envejecimiento.*;
 import Mazo.MazoEnvejecimiento;
 import Mazo.MazoPeligro;
 import Mazo.MazoPirata;
@@ -147,54 +148,66 @@ public class Mazos {
     public MazoPirata getMazoPirata(){
         
         CartaPirata1 carta1 = new CartaPirata1();
-        MazoRobin.añadirCarta(carta1);
+        MazoPira.añadirCarta(carta1);
         
         CartaPirata2 carta2 = new CartaPirata2();
-        MazoRobin.añadirCarta(carta2);
+        MazoPira.añadirCarta(carta2);
         
         CartaPirata3 carta3 = new CartaPirata3();
-        MazoRobin.añadirCarta(carta3);
+        MazoPira.añadirCarta(carta3);
         
         CartaPirata4 carta4 = new CartaPirata4();
-        MazoRobin.añadirCarta(carta4);
+        MazoPira.añadirCarta(carta4);
         
         CartaPirata5 carta5 = new CartaPirata5();
-        MazoRobin.añadirCarta(carta5);
+        MazoPira.añadirCarta(carta5);
         
         CartaPirata6 carta6 = new CartaPirata6();
-        MazoRobin.añadirCarta(carta6);
+        MazoPira.añadirCarta(carta6);
         
         CartaPirata7 carta7 = new CartaPirata7();
-        MazoRobin.añadirCarta(carta7);
+        MazoPira.añadirCarta(carta7);
         
         CartaPirata8 carta8 = new CartaPirata8();
-        MazoRobin.añadirCarta(carta8);
+        MazoPira.añadirCarta(carta8);
         
         CartaPirata9 carta9 = new CartaPirata9();
-        MazoRobin.añadirCarta(carta9);
+        MazoPira.añadirCarta(carta9);
         
         CartaPirata10 carta10 = new CartaPirata10();
-        MazoRobin.añadirCarta(carta10);
+        MazoPira.añadirCarta(carta10);
         
         return MazoPira;
     }
     
     public MazoEnvejecimiento getMazoEnvejecimiento(){
         
-        Comer carta1 = new Comer();
-        MazoRobin.añadirCarta(carta1);
+        Asustado carta1 = new Asustado();
+        MazoEnve.añadirCarta(carta1);
         
-        Concentrado carta2 = new Concentrado();
-        MazoRobin.añadirCarta(carta2);
+        Autohomicida carta2 = new Autohomicida();
+        MazoEnve.añadirCarta(carta2);
         
-        Desconcentrado carta3 = new Desconcentrado();
-        MazoRobin.añadirCarta(carta3);
+        Cansado carta3 = new Cansado();
+        MazoEnve.añadirCarta(carta3);
         
-        Genial carta4 = new Genial();
-        MazoRobin.añadirCarta(carta4);
+        DesconcentradoE carta4 = new DesconcentradoE();
+        MazoEnve.añadirCarta(carta4);
         
-        Normal carta5 = new Normal();
-        MazoRobin.añadirCarta(carta5);
+        Estupido carta5 = new Estupido();
+        MazoEnve.añadirCarta(carta5);
+        
+        Hambriento carta6 = new Hambriento();
+        MazoEnve.añadirCarta(carta6);
+        
+        Idiota carta7 = new Idiota();
+        MazoEnve.añadirCarta(carta7);
+        
+        MuyEstupido carta8 = new MuyEstupido();
+        MazoEnve.añadirCarta(carta8);
+        
+        MuyHambriento carta9 = new MuyHambriento();
+        MazoEnve.añadirCarta(carta9);
         
         return MazoEnve;
     }
