@@ -1,5 +1,6 @@
 package Control;
 
+import Carta.CartasRobinson.Comer;
 import Mazo.MazoEnvejecimiento;
 import Mazo.MazoPeligro;
 import Mazo.MazoPirata;
@@ -24,6 +25,14 @@ public class Mazos {
     MazoEnve = new MazoEnvejecimiento();
     
     
+    }
+    
+    public MazoRobinson getMazoRobinson(){
+        
+        Comer carta = new Comer();
+        
+        
+        return null;
     }
     
 }

@@ -57,10 +57,11 @@ public class Main {
         
                             while(!salir){
 
-                                System.out.println("1. Dificultad Facil");
-                                System.out.println("2. Dificultad Media");
-                                System.out.println("3. Dificultad Extrema");
-                                System.out.println("4. Salir");
+                                System.out.println("1. Dificultad 1");
+                                System.out.println("2. Dificultad 2");
+                                System.out.println("3. Dificultad 3");
+                                System.out.println("4. Dificultad 4");
+                                System.out.println("5. Salir");
    
                                 System.out.println("Escribe una de las opciones");
                                 opcion = sn.nextInt();
@@ -79,11 +80,15 @@ public class Main {
                                         System.out.println("Cambiando a dificultad Extrema");
                                         dificultad = 3;
                                         break;
-                                     case 4:
+                                    case 4:
+                                        System.out.println("Cambiando a dificultad Extrema");
+                                        dificultad = 4;
+                                        break;
+                                     case 5:
                                         salir=true;
                                         break;
                                      default:
-                                        System.out.println("Solo números entre 1 y 4");
+                                        System.out.println("Solo números entre 1 y 5");
                                 }
                             }
                         break;
