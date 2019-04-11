@@ -14,6 +14,9 @@ public class CartaPirata1 extends CartaPirata {
     
     MazoEnvejecimiento me;
     int pod;
+    
+    
+    
     public CartaPirata1(){
         setPoder(this.pod);
         setNumCartas(5);
