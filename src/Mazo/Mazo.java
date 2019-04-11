@@ -22,10 +22,20 @@ public abstract class Mazo {
     
     // ROBAR, BARAJAR 
     
-    public void robarCarta() {
-        listaCartas.addLast(carta);
+    public Carta robarCarta() {
+        Carta carta=listaCartas.getFirst();
         listaCartas.remove(carta);
-
+        
+        return carta;
+    }
+    
+    public Carta robarNCarta(int numero) {
+        for(int i=0;i<numero;i++){
+            Carta carta=listaCartas.getFirst();
+            listaCartas.remove(carta);
+        }
+        
+        return carta;
     }
     
     private static void barajarCartas(Mazo mazo){

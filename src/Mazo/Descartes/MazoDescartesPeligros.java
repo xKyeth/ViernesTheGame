@@ -5,10 +5,14 @@
  */
 package Mazo.Descartes;
 
+import Carta.Carta;
+import java.util.LinkedList;
+
 /**
  *
- * @author Insertar el nombre de la persona que edite esta clase
+ * @author Alexandra
  */
-public class DescartesRobinson {
-    
+public class MazoDescartesPeligros extends MazoDescartes{
+   LinkedList<Carta> listaDescartesPeligros;
+
 }
