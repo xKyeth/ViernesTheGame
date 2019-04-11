@@ -3,6 +3,7 @@ package Control;
 import Carta.CartasLucha.CartasPeligro.*;
 import Carta.CartasPirata.*;
 import Carta.CartasRobinson.*;
+import Carta.Envejecimiento.*;
 import Mazo.MazoEnvejecimiento;
 import Mazo.MazoPeligro;
 import Mazo.MazoPirata;
@@ -181,7 +182,7 @@ public class Mazos {
     
     public MazoEnvejecimiento getMazoEnvejecimiento(){
         
-        Comer carta1 = new Comer();
+        Asustado carta1 = new Asustado();
         MazoRobin.añadirCarta(carta1);
         
         Concentrado carta2 = new Concentrado();
