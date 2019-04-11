@@ -7,8 +7,8 @@ package Mazo.Descartes;
 
 /**
  *
- * @author Insertar el nombre de la persona que edite esta clase
+ * @author Alexandra
  */
-public class MazoDescartesTotal {
+public class MazoDescartesTotal extends MazoDescartes{
     
 }

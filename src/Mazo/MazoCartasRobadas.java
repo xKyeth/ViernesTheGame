@@ -33,6 +33,7 @@ public class MazoCartasRobadas extends Mazo{
         switch (respuesta) {
             case 1:
                 listaCartasRobadas.add(carta1);
+                
                 break;
             case 2:
                 listaCartasRobadas.add(carta2);
