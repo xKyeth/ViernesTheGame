@@ -9,6 +9,6 @@ package Carta.CartasLucha.CartasPeligro.CartasContrarias;
  *
  * @author pecorte
  */
-public class Estrategia2 {
+public class Vision {
     
 }
