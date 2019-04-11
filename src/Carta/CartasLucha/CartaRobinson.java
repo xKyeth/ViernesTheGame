@@ -2,32 +2,23 @@
 package Carta.CartasLucha;
 
 import Carta.Carta;
-
+import Estados.Cambio;
+import Estados.*;
 
  //@autor Fernando
 
 public abstract class CartaRobinson extends Carta {
     
-    private String fase;
+    private Cambio cambio;
     private int vida;
    
     
     public CartaRobinson() {
-        setFase("Verde");
+        cambio = new EstadoVerde();
         setVida(20);
     }
 
-    
-    public String getFase() {
-        return fase;
-    }
-
-    
-    public void setFase(String fase) {
-        this.fase = fase;
-    }
-
-    
+  
     public int getVida() {
         return vida;
     }
@@ -35,6 +26,20 @@ public abstract class CartaRobinson extends Carta {
     
     public void setVida(int vida) {
         this.vida = vida;
+    }
+
+    /**
+     * @return the cambio
+     */
+    public Cambio getCambio() {
+        return cambio;
+    }
+
+    /**
+     * @param cambio the cambio to set
+     */
+    public void setCambio(Cambio cambio) {
+        this.cambio = cambio;
     }
     
 }
