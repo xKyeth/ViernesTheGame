@@ -6,6 +6,7 @@
 package Carta.CartasLucha;
 
 import Carta.Carta;
+import Carta.CartasLucha.CartasPeligro.CartasContrarias.FactoriaCartasContrarias;
 
 
 /**
@@ -14,15 +15,18 @@ import Carta.Carta;
  */
 public abstract class CartaPeligro extends Carta {
 
-    public CartaPeligro(CartaJugador carta) {
+    public CartaPeligro(String carta, int p) {
         this.carta = carta;
+        this.poder=p;
     }
     protected int valorverde;
     protected int valoramarillo;
     protected int valorrojo;
     protected int numCartas;
-    protected CartaJugador carta;
+    protected String carta;
     protected String nombre;
+    protected FactoriaCartasContrarias fact;
+    protected int poder;
 
     public String getNombre() {
         return nombre;
@@ -44,8 +48,14 @@ public abstract class CartaPeligro extends Carta {
         return numCartas;
     }
 
-    public CartaJugador getCarta() {
+    public String getCarta() {
         return carta;
+    }
+    
+    public CartaJugador peligroConseguido(){
+        CartaJugador cart=fact.getCarta(carta);
+        cart.setPoder(poder);
+        return cart;
     }
     
 }

@@ -14,8 +14,8 @@ import Carta.CartasLucha.CartaPeligro;
  */
 public class BarcoVarado extends CartaPeligro {
 
-    public BarcoVarado(CartaJugador carta) {
-        super(carta);
+    public BarcoVarado(String carta, int p) {
+        super(carta, p);
         this.nombre="Barco Varado";
         this.valorverde=0;
         this.valoramarillo=1;

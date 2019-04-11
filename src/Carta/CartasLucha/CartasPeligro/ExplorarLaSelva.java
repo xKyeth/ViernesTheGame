@@ -14,8 +14,8 @@ import Carta.CartasLucha.CartaPeligro;
  */
 public class ExplorarLaSelva extends CartaPeligro {
     
-    public ExplorarLaSelva(CartaJugador carta) {
-        super(carta);
+    public ExplorarLaSelva(String carta, int p) {
+        super(carta, p);
         this.nombre="Explorando la Selva Profunda";
         this.valorverde=2;
         this.valoramarillo=5;

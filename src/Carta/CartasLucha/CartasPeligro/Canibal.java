@@ -14,8 +14,8 @@ import Carta.CartasLucha.CartaPeligro;
  */
 public class Canibal extends CartaPeligro {
     
-    public Canibal(CartaJugador carta) {
-        super(carta);
+    public Canibal(String carta, int p) {
+        super(carta, p);
         this.nombre="Canibal";
         this.valorverde=5;
         this.valoramarillo=9;
