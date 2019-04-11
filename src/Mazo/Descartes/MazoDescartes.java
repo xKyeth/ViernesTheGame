@@ -5,12 +5,15 @@
  */
 package Mazo.Descartes;
 
+import Carta.Carta;
 import Mazo.Mazo;
+import java.util.LinkedList;
 
 /**
  *
  * @author Alexandra
  */
 public class MazoDescartes extends Mazo{
-    
+    LinkedList<Carta> listaDescartes;
+
 }

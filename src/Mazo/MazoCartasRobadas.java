@@ -6,6 +6,7 @@
 package Mazo;
 
 import Carta.Carta;
+import Mazo.Descartes.MazoDescartesPeligros;
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -16,6 +17,7 @@ import java.util.Scanner;
 public class MazoCartasRobadas extends Mazo{
     LinkedList<Carta> listaCartasRobadas;
     MazoPeligro peligro;
+    MazoDescartesPeligros despeligro;
     // Tengo que robar dos cartas, y este mazo tiene que mantener 1 de las
     // dos cartas, la cual elige el usuario. (Este mazo va a servir como 
     // tablero de las cartas)
@@ -33,10 +35,11 @@ public class MazoCartasRobadas extends Mazo{
         switch (respuesta) {
             case 1:
                 listaCartasRobadas.add(carta1);
-                
+                despeligro.añadirCarta(carta2);
                 break;
             case 2:
                 listaCartasRobadas.add(carta2);
+                despeligro.añadirCarta(carta1);
                 break;
             default:
                 throw new AssertionError();
