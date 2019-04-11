@@ -12,7 +12,9 @@ import Carta.Carta;
  *
  * @author Insertar el nombre de la persona que edite esta clase
  */
+
 public abstract class CartaPeligro extends Carta{
+
 
     public CartaPeligro(CartaJugador carta) {
         this.carta = carta;
