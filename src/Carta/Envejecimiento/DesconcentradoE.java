@@ -11,9 +11,9 @@ import Carta.CartasLucha.CartaJugador;
  *
  * @author usuario
  */
-public class Desconcentrado extends CartaJugador{
+public class DesconcentradoE extends CartaJugador{
     private String tipo = "Barba negra";
-    public Desconcentrado() {
+    public DesconcentradoE() {
         super("Desconcentrado", -1, "-1 de vida");
     }
 
