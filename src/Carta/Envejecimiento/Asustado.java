@@ -13,7 +13,8 @@ import Carta.CartasLucha.CartaJugador;
  */
 public class Asustado extends CartaJugador{
     private String tipo = "Barba negra";
-    public Asustado(String nombreCarta, int poder, String habilidad) {
+    
+    public Asustado() {
         super("Asustado", 0, "Tu mayor carta = 0");
     }
 

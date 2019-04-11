@@ -13,7 +13,7 @@ import Carta.CartasLucha.CartaJugador;
  */
 public class Autohomicida extends CartaJugador{
     private String tipo = "Barba blanca";
-    public Autohomicida(String nombreCarta, int poder, String habilidad) {
+    public Autohomicida() {
         super("Autohomicida", -5, "...");
     }
 

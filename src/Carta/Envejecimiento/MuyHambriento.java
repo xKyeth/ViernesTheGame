@@ -13,7 +13,7 @@ import Carta.CartasLucha.CartaJugador;
  */
 public class MuyHambriento extends CartaJugador{
     private String tipo = "Barba blanca";
-    public MuyHambriento(String nombreCarta, int poder, String habilidad) {
+    public MuyHambriento() {
         super("Muy Hambriento", 0, "-2 de vida");
     }
 

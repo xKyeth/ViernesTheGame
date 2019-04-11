@@ -13,7 +13,7 @@ import Carta.CartasLucha.CartaJugador;
  */
 public class Desconcentrado extends CartaJugador{
     private String tipo = "Barba negra";
-    public Desconcentrado(String nombreCarta, int poder, String habilidad) {
+    public Desconcentrado() {
         super("Desconcentrado", -1, "-1 de vida");
     }
 

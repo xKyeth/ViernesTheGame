@@ -13,7 +13,7 @@ import Carta.CartasLucha.CartaJugador;
  */
 public class MuyEstupido extends CartaJugador{
     private String tipo = "Barba negra";
-    public MuyEstupido(String nombreCarta, int poder, String habilidad) {
+    public MuyEstupido() {
         super("Muy Estupido", -3, "...");
     }
 
