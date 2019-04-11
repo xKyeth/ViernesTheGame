@@ -13,7 +13,7 @@ public class EstadoPiratas extends Cambio{
     CartaRobinson robinson ;
     @Override
     public void cambioFase() {
-            robinson.setCambio(new EstadoPiratas());
+            Cambio piratas = new EstadoPiratas();
     }
     
 }

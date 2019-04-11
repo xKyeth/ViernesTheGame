@@ -14,7 +14,7 @@ public class EstadoAmarillo extends Cambio {
     CartaRobinson robinson ;
     @Override
     public void cambioFase() {
-        robinson.setCambio(new EstadoRojo());
+        Cambio rojo = new EstadoRojo();
     }
     
 }

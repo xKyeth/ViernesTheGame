@@ -16,7 +16,7 @@ public class EstadoVerde extends Cambio {
 
     @Override
     public void cambioFase() {
-        robinson.setCambio(new EstadoAmarillo());
+        Cambio amarillo = new EstadoAmarillo();
     }
     
 }
