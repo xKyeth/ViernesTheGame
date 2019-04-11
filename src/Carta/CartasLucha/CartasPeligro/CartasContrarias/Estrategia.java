@@ -5,10 +5,16 @@
  */
 package Carta.CartasLucha.CartasPeligro.CartasContrarias;
 
+import Carta.CartasLucha.CartaJugador;
+
 /**
  *
  * @author pecorte
  */
-public class Estrategia {
+public class Estrategia extends CartaJugador {
+    
+    public Estrategia() {
+        super("Estrategia", 0, "cambio1");
+    }
     
 }
