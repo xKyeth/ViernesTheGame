@@ -17,6 +17,6 @@ public class CartaPirata7 extends CartaPirata {
     }
     
     public void skillCarta(){
-            
+            //Cada carta vale la mitad
         }
 }

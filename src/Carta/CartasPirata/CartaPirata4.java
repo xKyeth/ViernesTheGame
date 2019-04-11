@@ -17,7 +17,7 @@ public class CartaPirata4 extends CartaPirata {
     }
     
         public void skillCarta(){
-            //cada carta robada cuesta 2 de vida en vez de 1
+            //robarCarta()+1
         }
         
         
