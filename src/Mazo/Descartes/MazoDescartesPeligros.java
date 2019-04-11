@@ -9,6 +9,6 @@ package Mazo.Descartes;
  *
  * @author Insertar el nombre de la persona que edite esta clase
  */
-public class Descartes {
+public class MazoDescartesPeligros {
     
 }
