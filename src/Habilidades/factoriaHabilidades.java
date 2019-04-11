@@ -6,6 +6,16 @@ import java.util.ResourceBundle;
 
 public class factoriaHabilidades {
     
-    public voi
+    public Habilidad creaHabilidad(String clave) {
+        try {
+        ResourceBundle rb=ResourceBundle.getBundle("Habilidades.Habilidad");
+        Habilidad habilidad=(Habilidad)Class.forName(rb.getString(clave)).newInstance();
+        return habilidad;
+        }
+        catch(Exception e) {
+        
+    }
+        
+    }
     
 }
