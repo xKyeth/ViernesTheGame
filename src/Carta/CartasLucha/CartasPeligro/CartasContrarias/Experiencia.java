@@ -5,10 +5,16 @@
  */
 package Carta.CartasLucha.CartasPeligro.CartasContrarias;
 
+import Carta.CartasLucha.CartaJugador;
+
 /**
  *
  * @author pecorte
  */
-public class Experiencia {
+public class Experiencia extends CartaJugador {
+    
+    public Experiencia() {
+        super("Experiencia", 0, "robo1");
+    }
     
 }

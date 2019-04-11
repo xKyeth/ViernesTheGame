@@ -5,10 +5,15 @@
  */
 package Carta.CartasLucha.CartasPeligro.CartasContrarias;
 
+import Carta.CartasLucha.CartaJugador;
+
 /**
  *
  * @author pecorte
  */
-public class Repeticion {
+public class Repeticion extends CartaJugador {
     
+    public Repeticion() {
+        super("Repeticion", 0, "doble1");
+    }
 }

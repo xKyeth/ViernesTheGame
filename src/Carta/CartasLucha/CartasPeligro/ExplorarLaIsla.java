@@ -14,8 +14,8 @@ import Carta.CartasLucha.CartaPeligro;
  */
 public class ExplorarLaIsla extends CartaPeligro {
     
-    public ExplorarLaIsla(CartaJugador carta) {
-        super(carta);
+    public ExplorarLaIsla(String carta, int p) {
+        super(carta, p);
         this.nombre="Explorando la Isla";
         this.valorverde=1;
         this.valoramarillo=3;

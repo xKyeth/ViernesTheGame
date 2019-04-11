@@ -5,10 +5,16 @@
  */
 package Carta.CartasLucha.CartasPeligro.CartasContrarias;
 
+import Carta.CartasLucha.CartaJugador;
+
 /**
  *
  * @author pecorte
  */
-public class Nutrientes {
+public class Nutrientes extends CartaJugador {
+    
+    public Nutrientes() {
+        super("Nutrientes", 0, "vida1");
+    }
     
 }

@@ -14,8 +14,8 @@ import Carta.CartasLucha.CartaPeligro;
  */
 public class AnimalesSalvajes extends CartaPeligro {
     
-    public AnimalesSalvajes(CartaJugador carta) {
-        super(carta);
+    public AnimalesSalvajes(String carta, int p) {
+        super(carta, p);
         this.nombre="Animales Salvajes";
         this.valorverde=4;
         this.valoramarillo=7;

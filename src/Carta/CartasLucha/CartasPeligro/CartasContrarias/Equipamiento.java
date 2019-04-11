@@ -4,14 +4,17 @@
  * and open the template in the editor.
  */
 package Carta.CartasLucha.CartasPeligro.CartasContrarias;
+
 import Carta.CartasLucha.CartaJugador;
 
 /**
  *
  * @author pecorte
  */
-public class Arma extends CartaJugador {
-    public Arma() {
-        super("Arma", 0, "...");
-    }    
+public class Equipamiento extends CartaJugador {
+    
+    public Equipamiento() {
+        super("Equipamiento", 0, "robo2");
+    }
+    
 }

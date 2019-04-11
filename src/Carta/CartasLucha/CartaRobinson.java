@@ -28,16 +28,12 @@ public abstract class CartaRobinson extends Carta {
         this.vida = vida;
     }
 
-    /**
-     * @return the cambio
-     */
+    
     public Cambio getCambio() {
         return cambio;
     }
 
-    /**
-     * @param cambio the cambio to set
-     */
+    
     public void setCambio(Cambio cambio) {
         this.cambio = cambio;
     }

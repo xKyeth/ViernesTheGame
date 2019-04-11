@@ -5,10 +5,16 @@
  */
 package Carta.CartasLucha.CartasPeligro.CartasContrarias;
 
+import Carta.CartasLucha.CartaJugador;
+
 /**
  *
  * @author pecorte
  */
-public class Vision {
+public class Vision extends CartaJugador {
+    
+    public Vision() {
+        super("Vision", 0, "ordena");
+    }
     
 }
