@@ -5,10 +5,12 @@
  */
 package Mazo.Descartes;
 
+import Mazo.Mazo;
+
 /**
  *
- * @author Insertar el nombre de la persona que edite esta clase
+ * @author Alexandra
  */
-public class DescartesRobinson {
+public class MazoDescartes extends Mazo{
     
 }
