@@ -13,5 +13,13 @@ import java.util.LinkedList;
  * @author alexandra
  */
 public class MazoPeligro extends Mazo {
-    LinkedList<CartaPeligro> listaCartasPeligro;
+    private LinkedList<CartaPeligro> listaCartasPeligro;
+
+    public LinkedList<CartaPeligro> getListaCartasPeligro() {
+        return listaCartasPeligro;
+    }
+
+    public void setListaCartasPeligro(LinkedList<CartaPeligro> listaCartasPeligro) {
+        this.listaCartasPeligro = listaCartasPeligro;
+    }
 }

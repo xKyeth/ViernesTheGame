@@ -13,5 +13,13 @@ import java.util.LinkedList;
  * @author alexandra
  */
 public class MazoEnvejecimiento extends Mazo {
-    LinkedList<CartaEnvejecimiento> listaCartasEnvejecimiento;
+    private LinkedList<CartaEnvejecimiento> listaCartasEnvejecimiento;
+
+    public LinkedList<CartaEnvejecimiento> getListaCartasEnvejecimiento() {
+        return listaCartasEnvejecimiento;
+    }
+
+    public void setListaCartasEnvejecimiento(LinkedList<CartaEnvejecimiento> listaCartasEnvejecimiento) {
+        this.listaCartasEnvejecimiento = listaCartasEnvejecimiento;
+    }
 }

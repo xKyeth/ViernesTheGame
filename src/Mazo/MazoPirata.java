@@ -14,6 +14,14 @@ import java.util.LinkedList;
  */
 public class MazoPirata extends Mazo{
     
-    LinkedList<CartaPirata> listaCartasPirata;    
+    private LinkedList<CartaPirata> listaCartasPirata;    
+
+    public LinkedList<CartaPirata> getListaCartasPirata() {
+        return listaCartasPirata;
+    }
+
+    public void setListaCartasPirata(LinkedList<CartaPirata> listaCartasPirata) {
+        this.listaCartasPirata = listaCartasPirata;
+    }
     
 }
