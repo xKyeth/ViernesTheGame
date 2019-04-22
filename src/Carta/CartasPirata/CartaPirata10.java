@@ -5,12 +5,14 @@
  */
 package Carta.CartasPirata;
 
+import Carta.CartasLucha.CartaJugador;
+
 /**
  *
  * @author imanol
  */
 public class CartaPirata10 extends CartaPirata {
- 
+    CartaJugador cj;
     
     public CartaPirata10(){
         setPoder(52);
@@ -19,7 +21,7 @@ public class CartaPirata10 extends CartaPirata {
     
     
     public void skillCarta(){
-            //Cada carta vale 1 punto mas
+            cj.setPoder(cj.getPoder()+1);
         }
     
 }
