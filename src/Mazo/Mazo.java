@@ -6,6 +6,7 @@
 package Mazo;
 
 import Carta.Carta;
+import Jugador.Robinson;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
@@ -19,20 +20,29 @@ import java.util.Random;
 public abstract class Mazo {
     LinkedList<Carta> listaCartas;
     Carta carta;
+    Robinson robinson;
     
     // ROBAR, BARAJAR 
     
     public Carta robarCarta() {
         Carta carta=listaCartas.getFirst();
         listaCartas.remove(carta);
-        
         return carta;
     }
     
-    public Carta robarNCarta(int numero) {
+    public Carta robarNCartaGratis(int numero){
         for(int i=0;i<numero;i++){
             Carta carta=listaCartas.getFirst();
             listaCartas.remove(carta);
+        }
+        return carta;
+    }
+    
+    public Carta robarNCartaVida(int numero) {
+        for(int i=0;i<numero;i++){
+            Carta carta=listaCartas.getFirst();
+            listaCartas.remove(carta);
+            robinson.restarVida(1);
         }
         
         return carta;
