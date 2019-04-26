@@ -1,16 +1,20 @@
 package Habilidades;
 
-import Carta.Carta;
-import Habilidades.Habilidad;
+
+import Carta.CartasLucha.CartaJugador;
 import Jugador.Robinson;
+import Mazo.MazoCartasRobadas;
 import java.util.LinkedList;
 
+/**
+ *
+ * @author Imanol y paula
+ */
 
 public class VidaMenosUno extends Habilidad {
-    Robinson j;
     
     @Override
-    public void usarHabilidad(LinkedList<Carta> cartas, Carta carta, Robinson jugador) {
-        j.restarVida(1);
+    public void usarHabilidad(LinkedList<MazoCartasRobadas> mcr, CartaJugador cartJug, Robinson jugador) {
+        jugador.restarVida(1);
     }
 }
