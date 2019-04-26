@@ -4,17 +4,23 @@
  * and open the template in the editor.
  */
 package Habilidades;
-
+import Carta.Carta;
+import Jugador.Robinson;
+import java.util.LinkedList;
 /**
  *
  * @author Imanol G
  */
 public class MasUnoVida extends Habilidad {
+    Robinson j;
     
+    @Override
+    public void usarHabilidad(LinkedList<Carta> cartas, Carta carta, Robinson jugador){
+       
+    j.sumarVida(1);
+        
+   }
     
-    public void MasUnoVida(){
-        //setVida(getVida()+1);
-    }
     
     
 }
