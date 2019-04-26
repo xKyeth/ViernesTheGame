@@ -10,7 +10,7 @@ import java.util.LinkedList;
 
 /**
  *
- * @author alexandra
+ * @author Imanol
  */
 public class MazoPirata extends Mazo{
     
