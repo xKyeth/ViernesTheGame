@@ -6,7 +6,7 @@ package Jugador;
  */
 public class Robinson {
     private int vida;
-    
+    private int valorCarta=1;
     public Robinson(int vida){
         this.vida=vida;
     }
@@ -38,6 +38,22 @@ public class Robinson {
         //se resta la vida y si se queda en negativo la variable muerto es true;
         
             if(this.vida-n>=0){
+                muerto=false;
+            }
+            else
+                muerto=true;
+        
+        return muerto;
+    }
+    public void setValorCarta(int valorCarta) {
+        this.valorCarta = valorCarta;
+    }
+    
+    public boolean robarcarta(){
+        boolean muerto;
+        //se resta la vida y si se queda en negativo la variable muerto es true;
+        if(this.vida-this.valorCarta>=0){
+                this.vida=this.vida-this.valorCarta;
                 muerto=false;
             }
             else
