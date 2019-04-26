@@ -5,21 +5,24 @@
  */
 package Habilidades;
 import Carta.Carta;
+import Carta.CartasLucha.CartaJugador;
 import Jugador.Robinson;
+import Mazo.MazoCartasRobadas;
 import java.util.LinkedList;
 /**
  *
- * @author Imanol G
+ * @author Paula
  */
 public class MasUnoVida extends Habilidad {
-    Robinson j;
-    
+  
+  
     @Override
-    public void usarHabilidad(LinkedList<Carta> cartas, Carta carta, Robinson jugador){
+    public void usarHabilidad(LinkedList<MazoCartasRobadas> mcr, CartaJugador cartJug, Robinson jugador) {
+          jugador.sumarVida(1);
+    }
        
-    j.sumarVida(1);
         
-   }
+   
     
     
     
