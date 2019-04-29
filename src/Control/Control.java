@@ -1,5 +1,6 @@
 package Control;
 
+import Carta.Carta;
 import Carta.CartasLucha.CartaPeligro;
 import Estados.*;
 import Fase.*;
@@ -7,6 +8,7 @@ import Jugador.Robinson;
 import Mazo.Descartes.*;
 import Mazo.*;
 import Vistas.Vista;
+import java.util.Scanner;
 
 /**
  *
@@ -18,7 +20,7 @@ public class Control {
     Robinson jugador;
     Vista vista;
     Fase fase;
-    CartaPeligro peligro;
+    Carta peligro;
     Mazos mazos;
     MazoDescartesPeligros descartesPeligro;
     MazoDescartesRobinson descartesRobinson;
@@ -37,5 +39,29 @@ public class Control {
         mazoPeligro=mazos.getMazoPeligro();
         mazoPirata=mazos.getMazoPirata();
         mazoRobinson=mazos.getMazoRobinson();
+    }
+    
+    public void elegirCarta(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Robamos dos cartas.");
+        Carta carta1=mazoPeligro.robarCarta();
+        Carta carta2=mazoPeligro.robarCarta();
+        System.out.println("¿Qué carta quieres quedarte? 1 para la primera, 2 para la segunda.");
+        System.out.println(carta1);
+        System.out.println(carta2);
+        int respuesta=sc.nextInt();
+        
+        switch (respuesta) {
+            case 1:
+                peligro=carta1;
+                descartesPeligro.añadirCarta(carta2);
+                break;
+            case 2:
+                peligro=carta2;
+                descartesPeligro.añadirCarta(carta1);
+                break;
+            default:
+                throw new AssertionError();
+        }
     }
 }
