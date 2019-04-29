@@ -22,7 +22,7 @@ public class MazoCartasRobadas extends Mazo{
     // dos cartas, la cual elige el usuario. (Este mazo va a servir como 
     // tablero de las cartas)
     
-    public void quedarseCarta(){
+    public void quedarseCarta(Mazo mazo){
         Scanner sc=new Scanner(System.in);
         System.out.println("Robamos dos cartas.");
         Carta carta1=peligro.robarCarta();
