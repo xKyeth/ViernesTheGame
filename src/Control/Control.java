@@ -35,10 +35,20 @@ public class Control {
         this.vista=new Vista(this);
         this.fase=new FasePeligro();
         this.mazos=new Mazos();
+        //Iniciacion de los mazos
         this.mazoEnvejecimiento=mazos.getMazoEnvejecimiento();
         this.mazoPeligro=mazos.getMazoPeligro();
         this.mazoPirata=mazos.getMazoPirata();
-        this.mazoRobinson=mazos.getMazoRobinson();       
+        this.mazoRobinson=mazos.getMazoRobinson(); 
+        this.descartesFinal=new MazoDescartesTotal();
+        this.descartesRobinson=new MazoDescartesRobinson();
+        this.descartesPeligro=new MazoDescartesPeligros();
+        //Relacion de los mazos
+        this.descartesPeligro.setMazoanterior(mazoPeligro);
+        this.mazoPeligro.setMazoanterior(descartesPeligro);
+        this.mano.setMazoanterior(mazoRobinson);
+        this.descartesRobinson.setMazoanterior(mano);
+        this.mazoRobinson.setMazoanterior(descartesRobinson);
     }
     
     public void elegirCarta(){
