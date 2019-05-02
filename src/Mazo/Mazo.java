@@ -72,4 +72,19 @@ public abstract class Mazo {
         LinkedList<Carta> cartas=mazo.getListaCartasMazo();
         return cartas;
     }
+
+    public LinkedList<Carta> getListaCartas() {
+        return listaCartas;
+    }
+
+    public void setListaCartas(LinkedList<Carta> listaCartas) {
+        this.listaCartas = listaCartas;
+    }
+    
+    public LinkedList<Carta> robarMazo() {
+        LinkedList<Carta> listaaux=new LinkedList();
+        this.listaCartas=listaaux;
+        this.listaCartas=null;
+        return listaaux;
+    }
 }

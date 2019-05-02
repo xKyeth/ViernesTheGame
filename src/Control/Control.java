@@ -1,7 +1,7 @@
 package Control;
 
 import Carta.Carta;
-import Carta.CartasLucha.CartaPeligro;
+import Carta.CartasLucha.*;
 import Estados.*;
 import Fase.*;
 import Jugador.Robinson;
@@ -63,5 +63,8 @@ public class Control {
             default:
                 throw new AssertionError();
         }
+    }
+    public void lucha(){
+        
     }
 }
