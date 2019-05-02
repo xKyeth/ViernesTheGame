@@ -9,9 +9,8 @@ public class vistaCartaPirata {
     
     public void verCarta (CartaPirata c){
     
-        System.out.println(c.getNumCartas());
-        System.out.println(c.getPoder());
-       
+        System.out.println(c.getNumCartas()+c.getPoder());
+      
     
     }
     

@@ -13,9 +13,9 @@ public class vistaCartaJugador {
     public void vercarta( CartaJugador c ){
         
         
-        System.out.println(c.getHabilidad());
-        System.out.println(c.getNombreCarta());
-        System.out.println(c.getPoder());
+        System.out.print(c.getHabilidad() + c.getNombreCarta() + c.getPoder());
+        
+
     
     }
     
