@@ -44,8 +44,8 @@ public class Control {
     public void elegirCarta(){
         Scanner sc=new Scanner(System.in);
         System.out.println("Robamos dos cartas.");
-        Carta carta1=mazoPeligro.robarCarta();
-        Carta carta2=mazoPeligro.robarCarta();
+        Carta carta1=mazoPeligro.cogerCarta();
+        Carta carta2=mazoPeligro.cogerCarta();
         System.out.println("¿Qué carta quieres quedarte? 1 para la primera, 2 para la segunda.");
         System.out.println(carta1);
         System.out.println(carta2);
