@@ -6,19 +6,23 @@
 package Habilidades;
 
 import Carta.CartasLucha.CartaJugador;
+import Carta.CartasLucha.CartaRobinson;
 import Jugador.Robinson;
 import Mazo.MazoCartasRobadas;
+import Vistas.Vista;
 import java.util.LinkedList;
 
 /**
  *
- * @author Imanol y paula
+ * @author Imanol G
  */
-public class RobarUnaCarta extends Habilidad {
+public class CopiarHabilidad extends Habilidad{
 
+    Vista vista;
+  
     @Override
     public void usarHabilidad(MazoCartasRobadas mcr, CartaJugador cartJug, Robinson jugador) {
-         
+        vista.eligeCarta(mcr, cartJug);
     }
     
 }

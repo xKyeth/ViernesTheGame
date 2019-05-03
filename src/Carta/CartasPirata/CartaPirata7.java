@@ -6,6 +6,7 @@
 package Carta.CartasPirata;
 
 import Carta.CartasLucha.CartaJugador;
+import Jugador.Robinson;
 
 /**
  *
@@ -18,7 +19,7 @@ public class CartaPirata7 extends CartaPirata {
         setNumCartas(9);
     }
     
-    public void skillCarta(){
+    public void skillCarta(Robinson jugador){
             cj.setPoder(cj.getPoder()/2);
         }
 }

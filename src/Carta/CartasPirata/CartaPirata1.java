@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package Carta.CartasPirata;
+import Jugador.Robinson;
 import Mazo.*;
 
 /**
@@ -17,7 +18,7 @@ public class CartaPirata1 extends CartaPirata {
     
     
     
-    public CartaPirata1(){
+    public CartaPirata1(Robinson jugador){
         setPoder((me.getListaCartasMazo().size()-10)*2);
         setNumCartas(5);
     }

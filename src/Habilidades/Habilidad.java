@@ -12,7 +12,7 @@ public abstract class Habilidad {
    Robinson robinson; 
    //public void action(Personaje p,Vista v){}
    
-   public abstract void usarHabilidad(LinkedList<MazoCartasRobadas> mcr, CartaJugador cartJug, Robinson jugador);
+   public abstract void usarHabilidad(MazoCartasRobadas mcr, CartaJugador cartJug, Robinson jugador);
    
    
     

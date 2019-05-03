@@ -16,7 +16,7 @@ import java.util.LinkedList;
 public class MasUnoVida extends Habilidad {
 
     @Override
-    public void usarHabilidad(LinkedList<MazoCartasRobadas> mcr, CartaJugador cartJug, Robinson jugador) {
+    public void usarHabilidad(MazoCartasRobadas mcr, CartaJugador cartJug, Robinson jugador) {
         jugador.sumarVida(1);
     }
     

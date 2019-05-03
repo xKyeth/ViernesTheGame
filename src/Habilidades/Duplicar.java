@@ -12,13 +12,16 @@ import java.util.LinkedList;
 
 /**
  *
- * @author Imanol y paula
+ * @author Imanol G
  */
-public class RobarUnaCarta extends Habilidad {
+public class Duplicar extends Habilidad {
 
+    CartaJugador cj;
+    
     @Override
     public void usarHabilidad(MazoCartasRobadas mcr, CartaJugador cartJug, Robinson jugador) {
-         
+        cj.setPoder(cj.getPoder()*2);
     }
+    
     
 }
