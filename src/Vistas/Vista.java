@@ -41,16 +41,26 @@ public class Vista {
     
     }
      //FERNANDO
-     public Carta eligeCarta(LinkedList<CartaRobinson> cartas, Carta c, Vista a) {
+     public Carta eligeCarta(LinkedList<CartaRobinson> cartas, Carta c) {
          Scanner entrada = new Scanner(System.in);
         cartas.remove(c);
         for (int i = 0; i < cartas.size(); i++) {
-            a.verCartaJugador(cartas.get(i));
+            this.verCartaJugador(cartas.get(i));
         }
         System.out.print("Elige una carta: ");
         int x = entrada.nextInt();
         return cartas.get(x);
         
+    }
+     
+     //FERNANDO
+     public int elegirOpcion() {
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Robar carta");
+        System.out.println("Usar carta");
+        System.out.println("Terminar fase");
+        int x = entrada.nextInt();
+        return x;
     }
     
 }
