@@ -22,4 +22,16 @@ public class MazoPeligro extends Mazo {
     public void setListaCartasPeligro(LinkedList<CartaPeligro> listaCartasPeligro) {
         this.listaCartasPeligro = listaCartasPeligro;
     }
+    
+    //Fernando
+    //Metodo que al pasarle un mazo de peligro devuelve true si está lleno 
+    //y false si está vacío
+    public boolean hayCartas(MazoPeligro cartaspeligro) {
+        if(cartaspeligro.getListaCartasPeligro().size()>0) {
+        return true;
+    }
+        else {
+            return false;
+        }
+    }
 }
