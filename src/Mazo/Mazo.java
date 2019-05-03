@@ -28,6 +28,7 @@ public abstract class Mazo {
         return carta;
     }
     public void robarCarta(){
+        
         listaCartas.add(mazoanterior.cogerCarta());
     }
     public void robarmazo(){

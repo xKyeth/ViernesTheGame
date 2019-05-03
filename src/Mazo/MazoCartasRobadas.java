@@ -14,11 +14,23 @@ import java.util.Scanner;
  *
  * @author alexandra
  */
+//variable valor
 public class MazoCartasRobadas extends Mazo{
+    private int valor;
     LinkedList<Carta> listaCartasRobadas;
     MazoPeligro peligro;
     MazoDescartesPeligros despeligro;
     // Tengo que robar dos cartas, y este mazo tiene que mantener 1 de las
     // dos cartas, la cual elige el usuario. (Este mazo va a servir como 
     // tablero de las cartas)
+
+    //FERNANDO
+    public int getValor() {
+        return valor;
+    }
+
+    //FERNANDO
+    public void setValor(int valor) {
+        this.valor = valor;
+    }
 }
