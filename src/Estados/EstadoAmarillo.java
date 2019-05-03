@@ -4,14 +4,13 @@
  * and open the template in the editor.
  */
 package Estados;
-import Carta.CartasLucha.CartaRobinson;
 
 /**
  *
  * @author usuario
  */
 public class EstadoAmarillo extends Cambio {
-    CartaRobinson robinson ;
+    
     @Override
     public void cambioFase() {
         Cambio rojo = new EstadoRojo();

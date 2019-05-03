@@ -20,7 +20,7 @@ public class Control {
     Robinson jugador;
     Vista vista;
     Fase fase;
-    Carta peligro;
+    CartaPeligro peligro;
     Mazos mazos;
     MazoDescartesPeligros descartesPeligro;
     MazoDescartesRobinson descartesRobinson;
@@ -63,11 +63,11 @@ public class Control {
         
         switch (respuesta) {
             case 1:
-                peligro=carta1;
+                peligro=(CartaPeligro) carta1;
                 descartesPeligro.añadirCarta(carta2);
                 break;
             case 2:
-                peligro=carta2;
+                peligro=(CartaPeligro) carta2;
                 descartesPeligro.añadirCarta(carta1);
                 break;
             default:
@@ -75,6 +75,23 @@ public class Control {
         }
     }
     public void lucha(){
+        int robar=peligro.getNumCartas();
+        int nivel;
+        if (cambio instanceof EstadoVerde){
+            nivel=peligro.getValorverde();
+        }else if (cambio instanceof EstadoAmarillo){
+            nivel=peligro.getValoramarillo();
+        }else if (cambio instanceof EstadoRojo){
+            nivel=peligro.getValorrojo();
+        }else if (cambio instanceof EstadoPiratas){
+        //Llamar al metodo lucha pirata
+            return;
+        }
+        mano.robarCarta();
+        int num=0;
+        while (num!=3){
+            
+        }
         
     }
 }
