@@ -11,6 +11,7 @@ import Carta.CartasLucha.CartaPeligro;
 import Carta.CartasLucha.CartaRobinson;
 import Carta.CartasPirata.CartaPirata;
 import Control.Control;
+import Jugador.Robinson;
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -21,6 +22,7 @@ import java.util.Scanner;
  */
 public class Vista {
     Control control;
+    CartaRobinson robinson;
     public Vista(Control c){
         this.control=c;
     } 
@@ -41,11 +43,13 @@ public class Vista {
     
     }
      //FERNANDO
-     public Carta eligeCarta(LinkedList<CartaRobinson> cartas, Carta c) {
+     public Carta eligeCarta(LinkedList<Carta> cartas, Carta c) {
          Scanner entrada = new Scanner(System.in);
         cartas.remove(c);
+        
         for (int i = 0; i < cartas.size(); i++) {
-            this.verCartaJugador(cartas.get(i));
+            robinson = (CartaRobinson) cartas.get(i);
+            this.verCartaJugador(robinson);
         }
         System.out.print("Elige una carta: ");
         int x = entrada.nextInt();
