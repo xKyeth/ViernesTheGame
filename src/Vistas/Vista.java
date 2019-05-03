@@ -14,7 +14,8 @@ import Control.Control;
 import Jugador.Robinson;
 import java.util.LinkedList;
 import java.util.Scanner;
-
+import java.util.Collection;
+import java.util.Collections;
 
 /**
  *
@@ -67,5 +68,11 @@ public class Vista {
         int x = entrada.nextInt();
         return x;
     }
-    
+    public CartaRobinson eligeCartaAleatoria(LinkedList<Carta> cartas, Carta c) {
+        Collections.shuffle(cartas);
+        robinson= (CartaRobinson) cartas.get(0);
+         this.verCartaJugador(robinson);
+        return robinson;
+    }
+     
 }
