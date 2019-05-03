@@ -43,7 +43,7 @@ public class Vista {
     
     }
      //FERNANDO
-     public Carta eligeCarta(LinkedList<Carta> cartas, Carta c) {
+     public CartaRobinson eligeCarta(LinkedList<Carta> cartas, Carta c) {
          Scanner entrada = new Scanner(System.in);
         cartas.remove(c);
         
@@ -53,7 +53,8 @@ public class Vista {
         }
         System.out.print("Elige una carta: ");
         int x = entrada.nextInt();
-        return cartas.get(x);
+        robinson = (CartaRobinson) cartas.get(x);
+        return robinson;
         
     }
      
