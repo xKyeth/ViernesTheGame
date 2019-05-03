@@ -5,6 +5,9 @@
  */
 package Vistas;
 
+import Carta.CartasLucha.CartaJugador;
+import Carta.CartasLucha.CartaPeligro;
+import Carta.CartasPirata.CartaPirata;
 import Control.Control;
 
 /**
@@ -16,4 +19,21 @@ public class Vista {
     public Vista(Control c){
         this.control=c;
     } 
+    
+    public void verCartaJugador( CartaJugador c ){
+        System.out.print(c.getHabilidad() + c.getNombreCarta() + c.getPoder());
+   
+    }
+    public void verCartaPeligro (CartaPeligro c){
+        
+        System.out.print(c.getCarta()+c.getNombre()+c.getNumCartas()+c.getValoramarillo()+c.getValorrojo()+c.getValorverde());
+        
+    }
+     public void verCartaPirata (CartaPirata c){
+    
+        System.out.println(c.getNumCartas()+c.getPoder());
+      
+    
+    }
+    
 }
