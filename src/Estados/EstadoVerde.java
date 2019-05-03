@@ -12,7 +12,6 @@ import Carta.CartasLucha.CartaRobinson;
  * @author usuario
  */
 public class EstadoVerde extends Cambio {
-    CartaRobinson robinson ;
 
     @Override
     public void cambioFase() {

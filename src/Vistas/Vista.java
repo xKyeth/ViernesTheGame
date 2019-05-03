@@ -5,21 +5,26 @@
  */
 package Vistas;
 
+import Carta.Carta;
 import Carta.CartasLucha.CartaJugador;
 import Carta.CartasLucha.CartaPeligro;
+import Carta.CartasLucha.CartaRobinson;
 import Carta.CartasPirata.CartaPirata;
 import Control.Control;
+import java.util.LinkedList;
+import java.util.Scanner;
+
 
 /**
  *
- * @author pecorte
+ * @author JACINTO
  */
 public class Vista {
     Control control;
     public Vista(Control c){
         this.control=c;
     } 
-    
+    //ENRIQUE
     public void verCartaJugador( CartaJugador c ){
         System.out.print(c.getHabilidad() + c.getNombreCarta() + c.getPoder());
    
@@ -34,6 +39,18 @@ public class Vista {
         System.out.println(c.getNumCartas()+c.getPoder());
       
     
+    }
+     //FERNANDO
+     public Carta eligeCarta(LinkedList<CartaRobinson> cartas, Carta c, Vista a) {
+         Scanner entrada = new Scanner(System.in);
+        cartas.remove(c);
+        for (int i = 0; i < cartas.size(); i++) {
+            a.verCartaJugador(cartas.get(i));
+        }
+        System.out.print("Elige una carta: ");
+        int x = entrada.nextInt();
+        return cartas.get(x);
+        
     }
     
 }
