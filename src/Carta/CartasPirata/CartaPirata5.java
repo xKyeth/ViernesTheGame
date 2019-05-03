@@ -13,7 +13,7 @@ import Mazo.*;
 public class CartaPirata5 extends CartaPirata {
      MazoPeligro mp;
      
-     public CartaPirata5(Robinson jugador){
+     public CartaPirata5(){
         setPoder(mp.getListaCartasMazo().size());
         setNumCartas(6);
     }

@@ -18,7 +18,7 @@ public class CartaPirata1 extends CartaPirata {
     
     
     
-    public CartaPirata1(Robinson jugador){
+    public CartaPirata1(){
         setPoder((me.getListaCartasMazo().size()-10)*2);
         setNumCartas(5);
     }

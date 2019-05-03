@@ -22,7 +22,8 @@ public class CopiarHabilidad extends Habilidad{
   
     @Override
     public void usarHabilidad(MazoCartasRobadas mcr, CartaJugador cartJug, Robinson jugador) {
-        vista.eligeCarta(mcr, cartJug);
+        CartaRobinson carta=vista.eligeCarta(mcr.getListaCartasMazo(), cartJug);
+        
     }
     
 }

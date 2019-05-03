@@ -12,5 +12,7 @@ public abstract class CartaRobinson extends CartaJugador {
     public CartaRobinson(String nombreCarta, int poder, String habilidad) {
         super(nombreCarta, poder, habilidad);
     }
+    
+    
   
 }
