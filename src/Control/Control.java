@@ -75,6 +75,7 @@ public class Control {
         }
     }
     public void lucha(){
+        Cambio cam=cambio;
         int robar=peligro.getNumCartas();
         int nivel;
         if (cambio instanceof EstadoVerde){
