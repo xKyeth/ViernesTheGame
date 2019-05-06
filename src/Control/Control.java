@@ -78,20 +78,35 @@ public class Control {
         Cambio cam=cambio;
         int robar=peligro.getNumCartas();
         int nivel;
-        if (cambio instanceof EstadoVerde){
+        if (cam instanceof EstadoVerde){
             nivel=peligro.getValorverde();
-        }else if (cambio instanceof EstadoAmarillo){
+        }else if (cam instanceof EstadoAmarillo){
             nivel=peligro.getValoramarillo();
-        }else if (cambio instanceof EstadoRojo){
+        }else if (cam instanceof EstadoRojo){
             nivel=peligro.getValorrojo();
-        }else if (cambio instanceof EstadoPiratas){
+        }else if (cam instanceof EstadoPiratas){
         //Llamar al metodo lucha pirata
             return;
         }
         mano.robarCarta();
         int num=0;
         while (num!=3){
-            
+            vista.verCartasJugador(mano.getListaCartasMazo());
+            int x=vista.elegirOpcion();
+            switch (x){
+                case 1:
+                    mano.robarCarta();
+                    break;
+                case 2:
+                    CartaJugador jug=vista.eligeCarta(mano.getListaCartasMazo());
+                    jug.getHabilidad();
+                    break;
+                case 3:
+                    break;
+                default:
+                    System.out.println("Opción incorrecta");
+                    break;
+            }
         }
         
     }

@@ -5,7 +5,6 @@
  */
 package Estados;
 
-import Carta.CartasLucha.CartaRobinson;
 
 /**
  *

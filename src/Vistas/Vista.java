@@ -8,7 +8,6 @@ package Vistas;
 import Carta.Carta;
 import Carta.CartasLucha.CartaJugador;
 import Carta.CartasLucha.CartaPeligro;
-import Carta.CartasLucha.CartaRobinson;
 import Carta.CartasPirata.CartaPirata;
 import Control.Control;
 import Jugador.Robinson;
@@ -23,13 +22,20 @@ import java.util.Collections;
  */
 public class Vista {
     Control control;
-    CartaRobinson robinson;
+    CartaJugador robinson;
     public Vista(Control c){
         this.control=c;
     } 
     //ENRIQUE
     public void verCartaJugador( CartaJugador c ){
         System.out.print(c.getHabilidad() + c.getNombreCarta() + c.getPoder());
+   
+    }
+    public void verCartasJugador( LinkedList<Carta> cartas){
+        for (int i = 0; i < cartas.size(); i++) {
+            robinson = (CartaJugador) cartas.get(i);
+            this.verCartaJugador(robinson);
+        }
    
     }
     public void verCartaPeligro (CartaPeligro c){
@@ -44,17 +50,30 @@ public class Vista {
     
     }
      //FERNANDO
-     public CartaRobinson eligeCarta(LinkedList<Carta> cartas, Carta c) {
+     public CartaJugador eligeCartaHabilidad(LinkedList<Carta> cartas, Carta c) {
          Scanner entrada = new Scanner(System.in);
         cartas.remove(c);
         
         for (int i = 0; i < cartas.size(); i++) {
-            robinson = (CartaRobinson) cartas.get(i);
+            robinson = (CartaJugador) cartas.get(i);
             this.verCartaJugador(robinson);
         }
         System.out.print("Elige una carta: ");
         int x = entrada.nextInt();
-        robinson = (CartaRobinson) cartas.get(x);
+        robinson = (CartaJugador) cartas.get(x);
+        return robinson;
+        
+    }
+     public CartaJugador eligeCarta(LinkedList<Carta> cartas) {
+         Scanner entrada = new Scanner(System.in);
+        
+        for (int i = 0; i < cartas.size(); i++) {
+            robinson = (CartaJugador) cartas.get(i);
+            this.verCartaJugador(robinson);
+        }
+        System.out.print("Elige una carta: ");
+        int x = entrada.nextInt();
+        robinson = (CartaJugador) cartas.get(x);
         return robinson;
         
     }
@@ -68,9 +87,9 @@ public class Vista {
         int x = entrada.nextInt();
         return x;
     }
-    public CartaRobinson eligeCartaAleatoria(LinkedList<Carta> cartas, Carta c) {
+    public CartaJugador eligeCartaAleatoria(LinkedList<Carta> cartas, Carta c) {
         Collections.shuffle(cartas);
-        robinson= (CartaRobinson) cartas.get(0);
+        robinson= (CartaJugador) cartas.get(0);
          this.verCartaJugador(robinson);
         return robinson;
     }

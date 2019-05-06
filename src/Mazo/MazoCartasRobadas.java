@@ -6,6 +6,7 @@
 package Mazo;
 
 import Carta.Carta;
+import Carta.CartasLucha.CartaJugador;
 import Mazo.Descartes.MazoDescartesPeligros;
 import java.util.LinkedList;
 import java.util.Scanner;
@@ -20,9 +21,8 @@ public class MazoCartasRobadas extends Mazo{
     LinkedList<Carta> listaCartasRobadas;
     MazoPeligro peligro;
     MazoDescartesPeligros despeligro;
-    // Tengo que robar dos cartas, y este mazo tiene que mantener 1 de las
-    // dos cartas, la cual elige el usuario. (Este mazo va a servir como 
-    // tablero de las cartas)
+    
+    
 
     //FERNANDO
     public int getValor() {
@@ -32,5 +32,12 @@ public class MazoCartasRobadas extends Mazo{
     //FERNANDO
     public void setValor(int valor) {
         this.valor = valor;
+    }
+    @Override
+    public void robarCarta(){
+        Carta c=mazoanterior.cogerCarta();
+        CartaJugador cj=(CartaJugador) c;
+        this.valor=valor+cj.getPoder();
+        listaCartas.add(cj);
     }
 }

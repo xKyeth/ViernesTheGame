@@ -5,7 +5,7 @@
  */
 package Mazo;
 
-import Carta.CartasLucha.CartaRobinson;
+import Carta.CartasLucha.CartaJugador;
 import java.util.LinkedList;
 
 /**
@@ -13,13 +13,13 @@ import java.util.LinkedList;
  * @author alexandra
  */
 public class MazoRobinson extends Mazo{
-    private LinkedList<CartaRobinson> listaCartasRobinson;
+    private LinkedList<CartaJugador> listaCartasRobinson;
 
-    public LinkedList<CartaRobinson> getListaCartasRobinson() {
+    public LinkedList<CartaJugador> getListaCartasRobinson() {
         return listaCartasRobinson;
     }
 
-    public void setListaCartasRobinson(LinkedList<CartaRobinson> listaCartasRobinson) {
+    public void setListaCartasRobinson(LinkedList<CartaJugador> listaCartasRobinson) {
         this.listaCartasRobinson = listaCartasRobinson;
     }
 }
