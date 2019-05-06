@@ -5,7 +5,7 @@ import java.util.ResourceBundle;
 //@autor Fernando
 
 public class factoriaHabilidades {
-    
+    public factoriaHabilidades(){}
     public Habilidad creaHabilidad(String clave)  throws  ClassNotFoundException, IllegalAccessException, InstantiationException {
         
         ResourceBundle rb=ResourceBundle.getBundle("Habilidades.Habilidad");

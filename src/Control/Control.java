@@ -4,6 +4,7 @@ import Carta.Carta;
 import Carta.CartasLucha.*;
 import Estados.*;
 import Fase.*;
+import Habilidades.*;
 import Jugador.Robinson;
 import Mazo.Descartes.*;
 import Mazo.*;
@@ -30,7 +31,9 @@ public class Control {
     MazoPeligro mazoPeligro;
     MazoPirata mazoPirata;
     MazoRobinson mazoRobinson;
+    factoriaHabilidades factoriaHabilidades;
     public Control(){
+        this.factoriaHabilidades=new factoriaHabilidades();
         this.cambio=new EstadoVerde();
         this.vista=new Vista(this);
         this.fase=new FasePeligro();
@@ -76,8 +79,32 @@ public class Control {
     }
     public void lucha(){
         Cambio cam=cambio;
-        int robar=peligro.getNumCartas();
-        int nivel;
+        int robar=peligro.getNumCartas()-1;
+        int nivel=0;
+        mano.robarCarta();
+        int num=0;
+        while (num!=3){
+            vista.verCartasJugador(mano.getListaCartasMazo());
+            int x=vista.elegirOpcion();
+            switch (x){
+                case 1:
+                    if (jugador.robarcarta())
+                        mano.robarCarta();
+                    else System.out.println("No se pueden robar mas cartas");
+                    break;
+                case 2:
+                    CartaJugador jug=vista.eligeCarta(mano.getListaCartasMazo());
+                    String habi=jug.getHabilidad();
+                    Habilidad hab=factoriaHabilidades.creaHabilidad(habi);
+                    hab.usarHabilidad(mano, jug, jugador);
+                    break;
+                case 3:
+                    break;
+                default:
+                    System.out.println("Opción incorrecta");
+                    break;
+            }
+        }
         if (cam instanceof EstadoVerde){
             nivel=peligro.getValorverde();
         }else if (cam instanceof EstadoAmarillo){
@@ -88,26 +115,8 @@ public class Control {
         //Llamar al metodo lucha pirata
             return;
         }
-        mano.robarCarta();
-        int num=0;
-        while (num!=3){
-            vista.verCartasJugador(mano.getListaCartasMazo());
-            int x=vista.elegirOpcion();
-            switch (x){
-                case 1:
-                    mano.robarCarta();
-                    break;
-                case 2:
-                    CartaJugador jug=vista.eligeCarta(mano.getListaCartasMazo());
-                    jug.getHabilidad();
-                    break;
-                case 3:
-                    break;
-                default:
-                    System.out.println("Opción incorrecta");
-                    break;
-            }
-        }
-        
+        if(nivel<=mano.getValor())
+            this.descartesRobinson.añadirCarta(peligro);
+        else this.descartesPeligro.añadirCarta(peligro);
     }
 }
