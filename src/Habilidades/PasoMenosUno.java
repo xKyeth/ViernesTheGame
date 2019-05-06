@@ -4,27 +4,23 @@
  * and open the template in the editor.
  */
 package Habilidades;
-import Carta.Carta;
+
 import Carta.CartasLucha.CartaJugador;
 import Estados.Cambio;
 import Jugador.Robinson;
 import Mazo.MazoCartasRobadas;
-import java.util.LinkedList;
+
 /**
  *
  * @author Imanol y paula
  */
-public class MasUnoVida extends Habilidad {
+public class PasoMenosUno extends Habilidad {
 
     @Override
     public void usarHabilidad(MazoCartasRobadas mcr, CartaJugador cartJug, Robinson jugador, Cambio cambio) {
-        jugador.sumarVida(1);
+        
+        //cambio.cambioFaseAnterior();
+        
     }
-    
-    
-    
-
-    
-    
     
 }

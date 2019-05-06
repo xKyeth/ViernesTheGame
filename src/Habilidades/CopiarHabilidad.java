@@ -6,6 +6,7 @@
 package Habilidades;
 
 import Carta.CartasLucha.CartaJugador;
+import Estados.Cambio;
 import Jugador.Robinson;
 import Mazo.MazoCartasRobadas;
 import Vistas.Vista;
@@ -20,7 +21,7 @@ public class CopiarHabilidad extends Habilidad{
     Vista vista;
   
     @Override
-    public void usarHabilidad(MazoCartasRobadas mcr, CartaJugador cartJug, Robinson jugador) {
+    public void usarHabilidad(MazoCartasRobadas mcr, CartaJugador cartJug, Robinson jugador,Cambio cambio) {
         CartaJugador carta=vista.eligeCartaHabilidad(mcr.getListaCartasMazo(), cartJug);
         
     }

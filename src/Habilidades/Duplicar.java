@@ -6,6 +6,7 @@
 package Habilidades;
 
 import Carta.CartasLucha.CartaJugador;
+import Estados.Cambio;
 import Jugador.Robinson;
 import Mazo.MazoCartasRobadas;
 import java.util.LinkedList;
@@ -19,7 +20,7 @@ public class Duplicar extends Habilidad {
     CartaJugador cj;
     
     @Override
-    public void usarHabilidad(MazoCartasRobadas mcr, CartaJugador cartJug, Robinson jugador) {
+    public void usarHabilidad(MazoCartasRobadas mcr, CartaJugador cartJug, Robinson jugador, Cambio cambio) {
         cj.setPoder(cj.getPoder()*2);
     }
     
