@@ -6,6 +6,8 @@
 package Carta.CartasPirata;
 
 import Carta.Carta;
+import Jugador.Robinson;
+import Mazo.*;
 
 /**
  *
@@ -18,6 +20,11 @@ public abstract class CartaPirata extends Carta {
     private int poder;
     private int numCartas;
 
+    
+    public void skillCarta (Robinson robinson, MazoCartasRobadas mcr,MazoEnvejecimiento me, MazoPeligro mdp){}
+    
+    
+    
     /**
      * @return the poder
      */
