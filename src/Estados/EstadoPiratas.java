@@ -11,8 +11,15 @@ package Estados;
 public class EstadoPiratas extends Cambio{
     
     @Override
-    public void cambioFase() {
+    public Cambio cambioFase() {
             Cambio piratas = new EstadoPiratas();
+            return piratas;
+    }
+
+    @Override
+    public Cambio faseAnterior() {
+            Cambio piratas = new EstadoPiratas();
+            return piratas;
     }
     
 }

@@ -13,8 +13,15 @@ package Estados;
 public class EstadoVerde extends Cambio {
 
     @Override
-    public void cambioFase() {
+    public Cambio cambioFase() {
         Cambio amarillo = new EstadoAmarillo();
+        return amarillo;
+    }
+
+    @Override
+    public Cambio faseAnterior() {
+        Cambio verde = new EstadoVerde();
+        return verde;
     }
     
 }

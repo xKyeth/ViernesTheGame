@@ -150,6 +150,9 @@ public class Control {
         System.out.println("Cogemos 2 Cartas de Piratas");
         CartaPirata cartaAux1=(CartaPirata) mazoPirata.cogerCarta();
         CartaPirata cartaAux2=(CartaPirata) mazoPirata.cogerCarta();
+        elegirPirata(cartaAux1, cartaAux2);
+        luchaPirata(pirata1);
+        luchaPirata(pirata2);
     }
     public void elegirPirata(CartaPirata cartaAux1, CartaPirata cartaAux2){
         System.out.println("¿Con cual quiere luchar Primero? 1 para la primera, 2 para la segunda.");
@@ -174,15 +177,14 @@ public class Control {
     }
     public void luchaPirata(CartaPirata pirata){
         Cambio cam=cambio;
+        pirata.skillCarta(jugador, mano, mazoEnvejecimiento, mazoPeligro);
         int robar=pirata.getNumCartas()-1;
         int nivel=pirata.getPoder();
         jugada(robar, cam);
         if(nivel<=mano.getValor())
             this.descartesRobinson.añadirCarta(factoriaContrarias.getCarta(peligro.getCarta()));
         else{
-            this.descartesPeligro.añadirCarta(peligro);
-            if(jugador.restarVida(nivel-mano.getValor()))
-                finJuego();
+            finJuego();
         }
     }
     public void finJuego(){

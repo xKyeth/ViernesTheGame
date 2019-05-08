@@ -10,5 +10,6 @@ package Estados;
  * @author usuario
  */
 public abstract class Cambio {
-    public abstract void cambioFase();
+    public abstract Cambio cambioFase();
+    public abstract Cambio faseAnterior();
 }
