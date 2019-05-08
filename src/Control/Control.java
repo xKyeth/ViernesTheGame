@@ -61,6 +61,15 @@ public class Control {
         this.mazoRobinson.setMazoanterior(descartesRobinson);
     }
     
+    public void jugar(){
+        if(!mazoPeligro.hayCartas(mazoPeligro))
+            cambio=cambio.cambioFase();
+        if(cambio instanceof EstadoPiratas)
+            this.fasePirata();
+        else
+            this.fasePeligro();
+    }
+    
     public void fasePeligro(){
         System.out.println("Robamos dos cartas.");
         CartaPeligro carta1=(CartaPeligro) mazoPeligro.cogerCarta();
@@ -153,6 +162,7 @@ public class Control {
         elegirPirata(cartaAux1, cartaAux2);
         luchaPirata(pirata1);
         luchaPirata(pirata2);
+        victoria();
     }
     public void elegirPirata(CartaPirata cartaAux1, CartaPirata cartaAux2){
         System.out.println("¿Con cual quiere luchar Primero? 1 para la primera, 2 para la segunda.");
@@ -189,6 +199,10 @@ public class Control {
     }
     public void finJuego(){
         System.out.println("Ha muerto");
+        System.exit(0);
+    }
+    public void victoria(){
+        System.out.println("Ha ganado");
         System.exit(0);
     }
 }
