@@ -21,7 +21,7 @@ public class MazoCartasRobadas extends Mazo{
     LinkedList<Carta> listaCartasRobadas;
     MazoPeligro peligro;
     MazoDescartesPeligros despeligro;
-    
+    int valorCarta=2;
     
 
     //FERNANDO
@@ -39,5 +39,8 @@ public class MazoCartasRobadas extends Mazo{
         CartaJugador cj=(CartaJugador) c;
         this.valor=valor+cj.getPoder();
         listaCartas.add(cj);
+    }
+    public void setValorCarta(int x){
+        this.valorCarta=x;
     }
 }
