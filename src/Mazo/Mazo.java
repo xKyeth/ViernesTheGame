@@ -6,11 +6,7 @@
 package Mazo;
 
 import Carta.Carta;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 /**
  *
