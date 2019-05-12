@@ -18,7 +18,7 @@ import java.util.Scanner;
 //variable valor
 public class MazoCartasRobadas extends Mazo{
     private int valor;
-    LinkedList<Carta> listaCartasRobadas;
+    private LinkedList<CartaJugador> listaCartasRobadas;
     MazoPeligro peligro;
     MazoDescartesPeligros despeligro;
     int valorCarta=2;
@@ -38,9 +38,16 @@ public class MazoCartasRobadas extends Mazo{
         Carta c=mazoanterior.cogerCarta();
         CartaJugador cj=(CartaJugador) c;
         this.valor=valor+cj.getPoder();
-        listaCartas.add(cj);
+        listaCartasRobadas.add(cj);
     }
     public void setValorCarta(int x){
         this.valorCarta=x;
+    }
+
+    /**
+     * @return the listaCartasRobadas
+     */
+    public LinkedList<CartaJugador> getListaCartasRobadas() {
+        return listaCartasRobadas;
     }
 }
