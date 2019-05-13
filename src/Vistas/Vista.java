@@ -28,7 +28,7 @@ public class Vista {
     } 
     //ENRIQUE
     public void verCartaJugador( CartaJugador c ){
-        System.out.print(c.getHabilidad() + c.getNombreCarta() + c.getPoder());
+        System.out.println(c.getHabilidad()+" " + c.getNombreCarta()+" " + c.getPoder());
    
     }
     public void verCartasJugador( LinkedList<Carta> cartas){
@@ -40,7 +40,8 @@ public class Vista {
     }
     public void verCartaPeligro (CartaPeligro c){
         
-        System.out.print(c.getCarta()+c.getNombre()+c.getNumCartas()+c.getValoramarillo()+c.getValorrojo()+c.getValorverde());
+        System.out.println(c.getCarta()+" "+c.getNombre()+" "+c.getNumCartas()+" "+c.getValorverde()+" "+c.getValoramarillo()+" "+c.getValorrojo());
+        
         
     }
      public void verCartaPirata (CartaPirata c){
