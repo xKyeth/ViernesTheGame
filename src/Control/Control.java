@@ -11,6 +11,8 @@ import Jugador.Robinson;
 import Mazo.Descartes.*;
 import Mazo.*;
 import Vistas.Vista;
+import java.applet.Applet;
+import java.applet.AudioClip;
 import java.util.Scanner;
 
 /**

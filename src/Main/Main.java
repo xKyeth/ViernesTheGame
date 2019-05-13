@@ -1,6 +1,9 @@
 package Main;
 
 import Control.Control;
+import Sonido.Sonido;
+import java.applet.Applet;
+import java.applet.AudioClip;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 /**
@@ -12,14 +15,17 @@ public class Main {
     /**
      * @param args the command line arguments
      */
+    
     public static void main(String[] args) {
-        /*Scanner sn = new Scanner(System.in);
+        Scanner sn = new Scanner(System.in);
         boolean salir = false;
         int opcion; //Guardaremos la opcion del usuario
          int seguro; //Para evitar errores en el reinicio
-
+         Sonido s2=new Sonido();
+         s2.SonidoFondo2();
+         
         while (!salir) {
- 
+            
             System.out.println("1. Reanudar Partida");
             System.out.println("2. Guardar Partida");
             System.out.println("3. Reiniciar la Partida");
@@ -33,8 +39,12 @@ public class Main {
                         
                 switch (opcion) {
                     case 1:
-                        System.out.println("Se ha reanudado la partida");
+                        System.out.println("Iniciar partida");
                         //reanudariamos la partida por donde iba antes de aparecer el menu.
+                        Control c=new Control();
+                        Sonido s=new Sonido();
+                        s.SonidoFondo();
+                        c.jugar();
                         break;
                     case 2:
                         System.out.println("La partida se ha guardado satisfactoriamente");
@@ -46,7 +56,8 @@ public class Main {
                            String respuesta = sn.next();
                         if ("Si".equals(respuesta)) {
                             System.out.println("Se reiniciará el juego");
-                            // llamamos al inicio del juego
+                            Control reinicio=new Control();
+                                    reinicio.jugar();
                                     
                         }else{
                             System.out.println("De acuerdo. Regresaras al menú");
@@ -103,9 +114,8 @@ public class Main {
                 System.out.println("Debes insertar un número");
                 sn.next();
             }
-        }*/
-        Control c=new Control();
-        c.jugar();
+            
     }
     
+    }
 }
