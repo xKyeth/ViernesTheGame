@@ -22,6 +22,10 @@ public abstract class Mazo {
         this.listaCartas = new LinkedList();
     }
     
+    public void clear(){
+        this.listaCartas.clear();
+    }
+    
     public Carta cogerCarta() {
         Carta carta=listaCartas.getFirst();
         listaCartas.remove(carta);
@@ -50,8 +54,8 @@ public abstract class Mazo {
         return carta;
     }
     
-    private static void barajarCartas(Mazo mazo){
-	Collections.shuffle((List<?>) mazo);
+    public void barajarCartas(){
+	Collections.shuffle(this.listaCartas);
     }
         
     public LinkedList<Carta> getListaCartasMazo() {

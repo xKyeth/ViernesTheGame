@@ -27,7 +27,13 @@ public class MazoCartasRobadas extends Mazo{
     public MazoCartasRobadas(){
         this.listaCartasRobadas= new LinkedList();
     }
-
+    
+    @Override
+    public void clear(){
+        this.valor=0;
+        this.listaCartas.clear();
+    }
+    
     //FERNANDO
     public int getValor() {
         return valor;

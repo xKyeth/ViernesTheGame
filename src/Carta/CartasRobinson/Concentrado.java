@@ -7,7 +7,7 @@ import Carta.CartasLucha.CartaJugador;
 public class Concentrado extends CartaJugador {
     
     public Concentrado() {
-        super("Concentrado", 1, "+2 Vida");
+        super("Concentrado", 1, "masdosvida");
         
     }
     

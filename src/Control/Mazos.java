@@ -52,7 +52,7 @@ public class Mazos {
             Normal carta5 = new Normal();
             MazoRobin.añadirCarta(carta5);
         }
-        
+        this.MazoRobin.barajarCartas();
         return MazoRobin;
     }
     

@@ -68,6 +68,8 @@ public class Control {
     }
     
     public void jugar(){
+        this.descartesRobinson.robarmazo();
+        mano.clear();
         if(!mazoPeligro.hayCartas())
             cambio=cambio.cambioFase();
         if(cambio instanceof EstadoPiratas)
@@ -110,6 +112,7 @@ public class Control {
         mano.robarCarta();
         while (exit!=true){
             vista.verCartasJugador(mano.getListaCartasMazo());
+            System.out.println(mano.getValor());
             int x=vista.elegirOpcion();
             switch (x){
                 case 1:
@@ -126,8 +129,8 @@ public class Control {
                     CartaJugador jug=vista.eligeCarta(mano.getListaCartasMazo());
                     String habi=jug.getHabilidad();
                     if (habi!="..."){
-                    hab=factoriaHabilidades.creaHabilidad(habi);
-                    hab.usarHabilidad(mano, jug, jugador, cam);}
+                        hab=factoriaHabilidades.creaHabilidad(habi);
+                        hab.usarHabilidad(mano, jug, jugador, cam);}
                     else
                         System.out.println("Esta carta no tiene habilidad");
                     break;
