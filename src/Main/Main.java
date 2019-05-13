@@ -21,8 +21,8 @@ public class Main {
         boolean salir = false;
         int opcion; //Guardaremos la opcion del usuario
          int seguro; //Para evitar errores en el reinicio
-         Sonido s2=new Sonido();
-         s2.SonidoFondo2();
+         Sonido s=new Sonido();
+         s.SonidoFondo();
          
         while (!salir) {
             
@@ -42,8 +42,6 @@ public class Main {
                         System.out.println("Iniciar partida");
                         //reanudariamos la partida por donde iba antes de aparecer el menu.
                         Control c=new Control();
-                        Sonido s=new Sonido();
-                        s.SonidoFondo();
                         c.jugar();
                         break;
                     case 2:
