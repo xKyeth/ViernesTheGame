@@ -14,9 +14,16 @@ public class CartaPirata5 extends CartaPirata {
      MazoPeligro mp;
      
      public CartaPirata5(){
-        setPoder(mp.getListaCartasMazo().size());
+        
         setNumCartas(6);
     }
      
+     
+   public void skillCarta (Robinson robinson, MazoCartasRobadas mcr,MazoEnvejecimiento me, MazoPeligro mdp){
+             
+    setPoder(mp.getListaCartasMazo().size());
+       
+  }
+
      
 }

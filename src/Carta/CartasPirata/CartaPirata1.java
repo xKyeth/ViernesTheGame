@@ -13,17 +13,20 @@ import Mazo.*;
  */
 public class CartaPirata1 extends CartaPirata {
     
-    MazoEnvejecimiento me;
+    
     
     
     
     
     public CartaPirata1(){
-        setPoder((me.getListaCartasMazo().size()-10)*2);
+        
         setNumCartas(5);
     }
     
-    
+    public void skillCarta (Robinson robinson, MazoCartasRobadas mcr,MazoEnvejecimiento me, MazoPeligro mdp){
+        
+        setPoder((me.getListaCartasMazo().size()-10)*2);
+    }
     
     
     
