@@ -17,7 +17,7 @@ public class Mazos {
     private MazoPirata MazoPira;
     private MazoEnvejecimiento MazoEnve;
     
-    public void Mazos(){    
+    public Mazos(){    
 
     MazoRobin = new MazoRobinson();
     MazoPeli = new MazoPeligro();
