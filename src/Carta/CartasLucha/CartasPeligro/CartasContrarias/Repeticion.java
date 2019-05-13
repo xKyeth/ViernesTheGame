@@ -14,6 +14,6 @@ import Carta.CartasLucha.CartaJugador;
 public class Repeticion extends CartaJugador {
     
     public Repeticion() {
-        super("Repeticion", 0, "doble1");
+        super("Repeticion", 0, "duplicar");
     }
 }

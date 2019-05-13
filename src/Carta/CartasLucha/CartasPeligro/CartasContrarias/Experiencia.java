@@ -14,7 +14,7 @@ import Carta.CartasLucha.CartaJugador;
 public class Experiencia extends CartaJugador {
     
     public Experiencia() {
-        super("Experiencia", 0, "robo1");
+        super("Experiencia", 0, "robarunacarta");
     }
     
 }

@@ -14,7 +14,7 @@ import Carta.CartasLucha.CartaJugador;
 public class Equipamiento extends CartaJugador {
     
     public Equipamiento() {
-        super("Equipamiento", 0, "robo2");
+        super("Equipamiento", 0, "robardoscartas");
     }
     
 }

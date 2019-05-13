@@ -14,7 +14,7 @@ import Carta.CartasLucha.CartaJugador;
 public class Nutrientes extends CartaJugador {
     
     public Nutrientes() {
-        super("Nutrientes", 0, "vida1");
+        super("Nutrientes", 0, "masunovida");
     }
     
 }

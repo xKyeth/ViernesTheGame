@@ -52,10 +52,10 @@ public class Control {
         mazoPeligro=new MazoPeligro();
         mazoPirata=new MazoPirata();
         mazoRobinson=new MazoRobinson();
+        this.mazoRobinson=mazos.getMazoRobinson(); 
         this.mazoEnvejecimiento=mazos.getMazoEnvejecimiento();
         this.mazoPeligro=mazos.getMazoPeligro();
         this.mazoPirata=mazos.getMazoPirata();
-        this.mazoRobinson=mazos.getMazoRobinson(); 
         this.descartesFinal=new MazoDescartesTotal();
         this.descartesRobinson=new MazoDescartesRobinson();
         this.descartesPeligro=new MazoDescartesPeligros();

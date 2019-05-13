@@ -14,7 +14,7 @@ import Carta.CartasLucha.CartaJugador;
 public class Imitacion extends CartaJugador {
     
     public Imitacion() {
-        super("Imitacion", 0, "copia");
+        super("Imitacion", 0, "copiar");
     }
     
 }
