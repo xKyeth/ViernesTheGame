@@ -18,16 +18,17 @@ public class Sonido {
     AudioClip fondo2;
     
     public void SonidoFondo(){
-    fondo1 = Applet.newAudioClip(getClass().getResource("/Sonido/Sonido.wav"));   
+    /*fondo1 = Applet.newAudioClip(getClass().getResource("/Sonido/Sonido.wav"));   
     fondo2.stop();
     fondo1.play();
-    fondo1.loop();
+    fondo1.loop();*/
 }
         
     public void SonidoFondo2(){
-    fondo2 = Applet.newAudioClip(getClass().getResource("/Sonido/Sonido2.wav"));
+    /*fondo2 = Applet.newAudioClip(getClass().getResource("/Sonido/Sonido2.wav"));
     fondo2.play();
-    
+    fondo2.loop();
+    */
 }
     
     

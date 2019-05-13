@@ -60,7 +60,7 @@ public class Vista {
             this.verCartaJugador(robinson);
         }
         System.out.print("Elige una carta: ");
-        int x = entrada.nextInt();
+        int x = entrada.nextInt()-1;
         robinson = (CartaJugador) cartas.get(x);
         return robinson;
         
@@ -72,10 +72,16 @@ public class Vista {
             robinson = (CartaJugador) cartas.get(i);
             this.verCartaJugador(robinson);
         }
-        System.out.print("Elige una carta: ");
-        int x = entrada.nextInt();
-        robinson = (CartaJugador) cartas.get(x);
-        return robinson;
+        try{
+            System.out.print("Elige una carta: ");
+            int x = entrada.nextInt()-1;
+            robinson = (CartaJugador) cartas.get(x);
+            return robinson;
+        }catch(Exception e){
+            System.out.println("Error al elegir carta");
+            return eligeCarta(cartas);
+        }
+        
         
     }
      

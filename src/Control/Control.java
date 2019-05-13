@@ -160,7 +160,7 @@ public class Control {
             System.out.println("Puntos Necesarios: "+p.getPoder());
             System.out.println("Puntos de Vida: "+jugador.getVida());
             vista.verCartasJugador(mano.getListaCartasMazo());
-            System.out.println(mano.getValor());
+            System.out.println("Valor Total: "+mano.getValor());
             int x=vista.elegirOpcion();
             switch (x){
                 case 1:
@@ -212,6 +212,9 @@ public class Control {
             this.descartesPeligro.añadirCarta(peligro);
             if(jugador.restarVida(nivel-mano.getValor()))
                 finJuego();
+            else
+                System.out.println("Perdiste la ronda elige una carta a descartar: ");
+                mano.getListaCartasRobadas().remove(vista.eligeCarta(mano.getListaCartasMazo()));
         }
     }
     

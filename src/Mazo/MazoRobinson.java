@@ -15,6 +15,12 @@ import java.util.LinkedList;
 public class MazoRobinson extends Mazo{
     private LinkedList<CartaJugador> listaCartasRobinson;
 
+    @Override
+    public void robarCarta(){
+        if(!this.listaCartas.isEmpty())
+            this.robarmazo();
+        listaCartas.add(mazoanterior.cogerCarta());
+    }
     public LinkedList<CartaJugador> getListaCartasRobinson() {
         return listaCartasRobinson;
     }

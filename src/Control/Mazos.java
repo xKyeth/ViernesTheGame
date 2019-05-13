@@ -58,96 +58,96 @@ public class Mazos {
     
     public MazoPeligro getMazoPeligro(){
         
-        BarcoVarado carta1 = new BarcoVarado("Lector", 0);
+        BarcoVarado carta1 = new BarcoVarado("lector", 0);
         MazoPeli.añadirCarta(carta1);
         
-        BarcoVarado carta2 = new BarcoVarado("Truco", 0);
+        BarcoVarado carta2 = new BarcoVarado("truco", 0);
         MazoPeli.añadirCarta(carta2);
         
-        BarcoVarado carta3 = new BarcoVarado("Conocimiento", 0);
+        BarcoVarado carta3 = new BarcoVarado("conocimiento", 0);
         MazoPeli.añadirCarta(carta3);
     
-        BarcoVarado carta4 = new BarcoVarado("Imitación", 0);
+        BarcoVarado carta4 = new BarcoVarado("imitación", 0);
         MazoPeli.añadirCarta(carta4);
         
-        BarcoVarado carta5 = new BarcoVarado("Nutrientes", 0);
+        BarcoVarado carta5 = new BarcoVarado("nutrientes", 0);
         MazoPeli.añadirCarta(carta5);
         
-        BarcoVarado carta6 = new BarcoVarado("Nutrientes", 0);
+        BarcoVarado carta6 = new BarcoVarado("nutrientes", 0);
         MazoPeli.añadirCarta(carta6);
         
-        BarcoVarado carta7 = new BarcoVarado("Equipamiento", 0);
+        BarcoVarado carta7 = new BarcoVarado("equipamiento", 0);
         MazoPeli.añadirCarta(carta7);
         
-        BarcoVarado carta8 = new BarcoVarado("Equipamiento", 0);
+        BarcoVarado carta8 = new BarcoVarado("equipamiento", 0);
         MazoPeli.añadirCarta(carta8);
         
-        BarcoVarado carta9 = new BarcoVarado("Estrategia", 0);
+        BarcoVarado carta9 = new BarcoVarado("estrategia", 0);
         MazoPeli.añadirCarta(carta9);
         
-        BarcoVarado carta10 = new BarcoVarado("Estrategia", 0);
+        BarcoVarado carta10 = new BarcoVarado("estrategia", 0);
         MazoPeli.añadirCarta(carta10);
         
-        ExplorarLaIsla carta11 = new ExplorarLaIsla("Imitación", 1);
+        ExplorarLaIsla carta11 = new ExplorarLaIsla("imitación", 1);
         MazoPeli.añadirCarta(carta11);
         
-        ExplorarLaIsla carta12 = new ExplorarLaIsla("Conocimiento", 1);
+        ExplorarLaIsla carta12 = new ExplorarLaIsla("conocimiento", 1);
         MazoPeli.añadirCarta(carta12);
         
-        ExplorarLaIsla carta13 = new ExplorarLaIsla("Repeticion", 1);
+        ExplorarLaIsla carta13 = new ExplorarLaIsla("repeticion", 1);
         MazoPeli.añadirCarta(carta13);
         
-        ExplorarLaIsla carta14 = new ExplorarLaIsla("Truco", 1);
+        ExplorarLaIsla carta14 = new ExplorarLaIsla("truco", 1);
         MazoPeli.añadirCarta(carta14);
         
-        ExplorarLaIsla carta15 = new ExplorarLaIsla("Nutrientes", 1);
+        ExplorarLaIsla carta15 = new ExplorarLaIsla("nutrientes", 1);
         MazoPeli.añadirCarta(carta15);
         
-        ExplorarLaIsla carta16 = new ExplorarLaIsla("Nutrientes", 1);
+        ExplorarLaIsla carta16 = new ExplorarLaIsla("nutrientes", 1);
         MazoPeli.añadirCarta(carta16);
         
-        ExplorarLaIsla carta17 = new ExplorarLaIsla("Arma", 2);
+        ExplorarLaIsla carta17 = new ExplorarLaIsla("arma", 2);
         MazoPeli.añadirCarta(carta17);
         
-        ExplorarLaIsla carta18 = new ExplorarLaIsla("Arma", 2);
+        ExplorarLaIsla carta18 = new ExplorarLaIsla("arma", 2);
         MazoPeli.añadirCarta(carta18);
         
-        ExplorarLaSelva carta19 = new ExplorarLaSelva("Experiencia", 2);
+        ExplorarLaSelva carta19 = new ExplorarLaSelva("experiencia", 2);
         MazoPeli.añadirCarta(carta19);
         
-        ExplorarLaSelva carta20 = new ExplorarLaSelva("Conocimiento", 2);
+        ExplorarLaSelva carta20 = new ExplorarLaSelva("conocimiento", 2);
         MazoPeli.añadirCarta(carta20);
         
-        ExplorarLaSelva carta21 = new ExplorarLaSelva("Vision", 2);
+        ExplorarLaSelva carta21 = new ExplorarLaSelva("vision", 2);
         MazoPeli.añadirCarta(carta21);
         
-        ExplorarLaSelva carta22 = new ExplorarLaSelva("Estrategia", 2);
+        ExplorarLaSelva carta22 = new ExplorarLaSelva("estrategia", 2);
         MazoPeli.añadirCarta(carta22);
         
-        ExplorarLaSelva carta23 = new ExplorarLaSelva("Nutrientes", 2);
+        ExplorarLaSelva carta23 = new ExplorarLaSelva("nutrientes", 2);
         MazoPeli.añadirCarta(carta23);
         
-        ExplorarLaSelva carta24 = new ExplorarLaSelva("Repeticion", 2);
+        ExplorarLaSelva carta24 = new ExplorarLaSelva("repeticion", 2);
         MazoPeli.añadirCarta(carta24);
         
-        AnimalesSalvajes carta25 = new AnimalesSalvajes("Conocimiento", 3);
+        AnimalesSalvajes carta25 = new AnimalesSalvajes("conocimiento", 3);
         MazoPeli.añadirCarta(carta25);
         
-        AnimalesSalvajes carta26 = new AnimalesSalvajes("Experiencia", 3);
+        AnimalesSalvajes carta26 = new AnimalesSalvajes("experiencia", 3);
         MazoPeli.añadirCarta(carta26);
         
-        AnimalesSalvajes carta27 = new AnimalesSalvajes("Vision", 3);
+        AnimalesSalvajes carta27 = new AnimalesSalvajes("vision", 3);
         MazoPeli.añadirCarta(carta27);
         
-        AnimalesSalvajes carta28 = new AnimalesSalvajes("Estrategia", 3);
+        AnimalesSalvajes carta28 = new AnimalesSalvajes("estrategia", 3);
         MazoPeli.añadirCarta(carta28);
         
-        Canibal carta29 = new Canibal("Arma", 4);
+        Canibal carta29 = new Canibal("arma", 4);
         MazoPeli.añadirCarta(carta29);
         
         Canibal carta30 = new Canibal("Arma", 4);
         MazoPeli.añadirCarta(carta30);
-        
+        this.MazoPeli.barajarCartas();;
     return MazoPeli;
     }
     
@@ -183,6 +183,7 @@ public class Mazos {
         CartaPirata10 carta10 = new CartaPirata10();
         MazoPira.añadirCarta(carta10);
         
+        this.MazoPira.barajarCartas();
         return MazoPira;
     }
     
@@ -214,7 +215,7 @@ public class Mazos {
         
         MuyHambriento carta9 = new MuyHambriento();
         MazoEnve.añadirCarta(carta9);
-        
+        this.MazoEnve.barajarCartas();
         return MazoEnve;
     }
 }
