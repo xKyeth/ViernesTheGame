@@ -15,7 +15,7 @@ import java.util.LinkedList;
 
 /**
  *
- * @author paula
+ * @author Imanol y paula
  */
 public class CartaMasAlta0 extends Habilidad{
 

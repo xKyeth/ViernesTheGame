@@ -13,7 +13,7 @@ import java.util.LinkedList;
 
 /**
  *
- * @author Imanol G
+ * @author Imanol y paula
  */
 public class Duplicar extends Habilidad {
 
