@@ -42,7 +42,7 @@ public class MazoCartasRobadas extends Mazo{
         Carta c=mazoanterior.cogerCarta();
         CartaJugador cj=(CartaJugador) c;
         this.valor=valor+cj.getPoder();
-        listaCartasRobadas.add(cj);
+        this.listaCartas.add(c);
     }
     public void setValorCarta(int x){
         this.valorCarta=x;
