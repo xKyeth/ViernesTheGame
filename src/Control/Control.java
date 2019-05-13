@@ -116,7 +116,7 @@ public class Control {
                     if( robar>0 ){
                         robar--;
                         mano.robarCarta();
-                    }else if (jugador.robarcarta())
+                    }else if (!jugador.robarcarta())
                         mano.robarCarta();
                     else 
                         System.out.println("No se pueden robar mas cartas");

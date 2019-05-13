@@ -23,6 +23,10 @@ public class MazoCartasRobadas extends Mazo{
     MazoDescartesPeligros despeligro;
     int valorCarta=2;
     
+    
+    public MazoCartasRobadas(){
+        this.listaCartasRobadas= new LinkedList();
+    }
 
     //FERNANDO
     public int getValor() {
