@@ -7,7 +7,7 @@ package Carta.CartasPirata;
 
 import Carta.CartasLucha.CartaJugador;
 import Jugador.Robinson;
-import Mazo.MazoCartasRobadas;
+import Mazo.*;
 import java.util.LinkedList;
 
 /**
@@ -21,8 +21,9 @@ public class CartaPirata4 extends CartaPirata {
         setNumCartas(7);
     }
     
-        public void skillCarta(Robinson jugador){
-            jugador.setValorCarta(2);
+    @Override
+        public void skillCarta (Robinson robinson, MazoCartasRobadas mcr,MazoEnvejecimiento me, MazoPeligro mdp){
+            robinson.setValorCarta(2);
         }
         
         

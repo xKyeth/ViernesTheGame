@@ -7,6 +7,9 @@ package Carta.CartasPirata;
 
 import Carta.CartasLucha.CartaJugador;
 import Jugador.Robinson;
+import Mazo.MazoCartasRobadas;
+import Mazo.MazoEnvejecimiento;
+import Mazo.MazoPeligro;
 
 /**
  *
@@ -20,9 +23,8 @@ public class CartaPirata10 extends CartaPirata {
         setNumCartas(10);
     }
     
-    
-    public void skillCarta(Robinson jugador){
-            cj.setPoder(cj.getPoder()+1);
+    @Override
+public void skillCarta (Robinson robinson, MazoCartasRobadas mcr,MazoEnvejecimiento me, MazoPeligro mdp){            cj.setPoder(cj.getPoder()+1);
         }
     
 }

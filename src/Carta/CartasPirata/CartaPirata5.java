@@ -18,7 +18,7 @@ public class CartaPirata5 extends CartaPirata {
         setNumCartas(6);
     }
      
-     
+   @Override
    public void skillCarta (Robinson robinson, MazoCartasRobadas mcr,MazoEnvejecimiento me, MazoPeligro mdp){
              
     setPoder(mp.getListaCartasMazo().size());
