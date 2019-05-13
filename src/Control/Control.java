@@ -39,6 +39,7 @@ public class Control {
     CartaPirata pirata2;    
     public Control(){
         sc=new Scanner(System.in);
+        this.jugador=new Robinson(20);
         this.factoriaContrarias= new FactoriaCartasContrarias();
         this.factoriaHabilidades=new factoriaHabilidades();
         this.cambio=new EstadoVerde();
@@ -68,6 +69,7 @@ public class Control {
             this.fasePirata();
         else
             this.fasePeligro();
+        jugar();
     }
     
     public void fasePeligro(){
@@ -115,10 +117,14 @@ public class Control {
                         System.out.println("No se pueden robar mas cartas");
                     break;
                 case 2:
+                    Habilidad hab;
                     CartaJugador jug=vista.eligeCarta(mano.getListaCartasMazo());
                     String habi=jug.getHabilidad();
-                    Habilidad hab=factoriaHabilidades.creaHabilidad(habi);
-                    hab.usarHabilidad(mano, jug, jugador, cam);
+                    if (habi!="..."){
+                    hab=factoriaHabilidades.creaHabilidad(habi);
+                    hab.usarHabilidad(mano, jug, jugador, cam);}
+                    else
+                        System.out.println("Esta carta no tiene habilidad");
                     break;
                 case 3:
                     exit=true;

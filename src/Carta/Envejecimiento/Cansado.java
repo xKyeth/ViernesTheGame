@@ -14,7 +14,7 @@ import Carta.CartasLucha.CartaJugador;
 public class Cansado extends CartaJugador{
     private String tipo = "Barba negra";
     public Cansado() {
-        super("Cansado", 0, "Stop!");
+        super("Cansado", 0, "...");
     }
 
     

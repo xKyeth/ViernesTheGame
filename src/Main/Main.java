@@ -1,5 +1,6 @@
 package Main;
 
+import Control.Control;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 /**
@@ -12,7 +13,7 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner sn = new Scanner(System.in);
+        /*Scanner sn = new Scanner(System.in);
         boolean salir = false;
         int opcion; //Guardaremos la opcion del usuario
          int seguro; //Para evitar errores en el reinicio
@@ -102,8 +103,9 @@ public class Main {
                 System.out.println("Debes insertar un número");
                 sn.next();
             }
-        }
- 
+        }*/
+        Control c=new Control();
+        c.jugar();
     }
     
 }

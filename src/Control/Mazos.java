@@ -31,21 +31,30 @@ public class Mazos {
     }
     
     public MazoRobinson getMazoRobinson(){
+        for(int x=0; x<1; x++){
+            Comer carta1 = new Comer();
+            MazoRobin.añadirCarta(carta1);
+        }
         
-        Comer carta1 = new Comer();
-        MazoRobin.añadirCarta(carta1);
+        for(int x=0; x<3; x++){
+            Concentrado carta2 = new Concentrado();
+            MazoRobin.añadirCarta(carta2);
+        }
         
-        Concentrado carta2 = new Concentrado();
-        MazoRobin.añadirCarta(carta2);
+        for(int x=0; x<5; x++){
+            Desconcentrado carta3 = new Desconcentrado();
+            MazoRobin.añadirCarta(carta3);
+        }
         
-        Desconcentrado carta3 = new Desconcentrado();
-        MazoRobin.añadirCarta(carta3);
+        for(int x=0; x<1; x++){
+            Genial carta4 = new Genial();
+            MazoRobin.añadirCarta(carta4);
+        }
         
-        Genial carta4 = new Genial();
-        MazoRobin.añadirCarta(carta4);
-        
-        Normal carta5 = new Normal();
-        MazoRobin.añadirCarta(carta5);
+        for(int x=0; x<8; x++){
+            Normal carta5 = new Normal();
+            MazoRobin.añadirCarta(carta5);
+        }
         
         return MazoRobin;
     }

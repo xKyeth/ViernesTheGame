@@ -12,7 +12,7 @@ import Carta.CartasLucha.CartaJugador;
 public class Hambriento extends CartaJugador {
     private String tipo = "Barba negra";
     public Hambriento() {
-        super("Hambriento", -1, "-1 de vida");
+        super("Hambriento", -1, "...");
         
     }
 
