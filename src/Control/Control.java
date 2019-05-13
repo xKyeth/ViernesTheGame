@@ -47,6 +47,11 @@ public class Control {
         this.fase=new FasePeligro();
         this.mazos=new Mazos();
         //Iniciacion de los mazos
+        mano=new MazoCartasRobadas();
+        mazoEnvejecimiento=new MazoEnvejecimiento();
+        mazoPeligro=new MazoPeligro();
+        mazoPirata=new MazoPirata();
+        mazoRobinson=new MazoRobinson();
         this.mazoEnvejecimiento=mazos.getMazoEnvejecimiento();
         this.mazoPeligro=mazos.getMazoPeligro();
         this.mazoPirata=mazos.getMazoPirata();

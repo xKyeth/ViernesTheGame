@@ -4,10 +4,7 @@ import Carta.CartasLucha.CartasPeligro.*;
 import Carta.CartasPirata.*;
 import Carta.CartasRobinson.*;
 import Carta.Envejecimiento.*;
-import Mazo.MazoEnvejecimiento;
-import Mazo.MazoPeligro;
-import Mazo.MazoPirata;
-import Mazo.MazoRobinson;
+import Mazo.*;
 
 /**
  *
