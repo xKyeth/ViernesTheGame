@@ -18,6 +18,10 @@ public abstract class Mazo {
     Mazo mazoanterior;
     // ROBAR, BARAJAR 
     
+    public Mazo(){
+        this.listaCartas = new LinkedList();
+    }
+    
     public Carta cogerCarta() {
         Carta carta=listaCartas.getFirst();
         listaCartas.remove(carta);
