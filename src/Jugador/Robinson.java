@@ -26,7 +26,7 @@ public class Robinson {
     }
     
     public void sumarVida(int n){
-         if(this.vida+n<22){
+         if(this.vida+n<=22){
              this.vida=this.vida+n;
          }         
     }

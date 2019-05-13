@@ -70,7 +70,7 @@ public class Control {
     public void jugar(){
         this.descartesRobinson.robarmazo();
         mano.clear();
-        if(!mazoPeligro.hayCartas())
+        if(mazoPeligro.hayCartas())
             cambio=cambio.cambioFase();
         if(cambio instanceof EstadoPiratas)
             this.fasePirata();
@@ -111,6 +111,14 @@ public class Control {
         boolean exit=false;
         mano.robarCarta();
         while (exit!=true){
+            if (cam instanceof EstadoVerde){
+                System.out.println("Puntos Necesarios: "+peligro.getValorverde());
+            }else if (cam instanceof EstadoAmarillo){
+                System.out.println("Puntos Necesarios: "+peligro.getValoramarillo());
+            }else if (cam instanceof EstadoRojo){
+                System.out.println("Puntos Necesarios: "+peligro.getValorrojo());
+            }
+            System.out.println("Puntos de Vida: "+jugador.getVida());
             vista.verCartasJugador(mano.getListaCartasMazo());
             System.out.println(mano.getValor());
             int x=vista.elegirOpcion();
@@ -142,8 +150,44 @@ public class Control {
                     break;
             }
         }
-        
-        
+    }
+        public void jugadaPirata(int robar, Cambio cam, CartaPirata p){
+        boolean exit=false;
+        mano.robarCarta();
+        while (exit!=true){
+            System.out.println("Puntos Necesarios: "+p.getPoder());
+            System.out.println("Puntos de Vida: "+jugador.getVida());
+            vista.verCartasJugador(mano.getListaCartasMazo());
+            System.out.println(mano.getValor());
+            int x=vista.elegirOpcion();
+            switch (x){
+                case 1:
+                    if( robar>0 ){
+                        robar--;
+                        mano.robarCarta();
+                    }else if (!jugador.robarcarta())
+                        mano.robarCarta();
+                    else 
+                        System.out.println("No se pueden robar mas cartas");
+                    break;
+                case 2:
+                    Habilidad hab;
+                    CartaJugador jug=vista.eligeCarta(mano.getListaCartasMazo());
+                    String habi=jug.getHabilidad();
+                    if (habi!="..."){
+                        hab=factoriaHabilidades.creaHabilidad(habi);
+                        hab.usarHabilidad(mano, jug, jugador, cam);}
+                    else
+                        System.out.println("Esta carta no tiene habilidad");
+                    break;
+                case 3:
+                    exit=true;
+                    break;
+                default:
+                    System.out.println("Opción incorrecta");
+                    break;
+            }
+        }   
     }
     public void lucha(){
         Cambio cam=cambio;
@@ -204,7 +248,7 @@ public class Control {
         pirata.skillCarta(jugador, mano, mazoEnvejecimiento, mazoPeligro);
         int robar=pirata.getNumCartas()-1;
         int nivel=pirata.getPoder();
-        jugada(robar, cam);
+        jugadaPirata(robar, cam, pirata);
         if(nivel<=mano.getValor())
             this.descartesRobinson.añadirCarta(factoriaContrarias.getCarta(peligro.getCarta()));
         else{
