@@ -68,7 +68,7 @@ public class Control {
     }
     
     public void jugar(){
-        if(!mazoPeligro.hayCartas(mazoPeligro))
+        if(!mazoPeligro.hayCartas())
             cambio=cambio.cambioFase();
         if(cambio instanceof EstadoPiratas)
             this.fasePirata();
